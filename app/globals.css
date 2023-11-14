@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Anonymous+Pro:wght@400;700&family=Aoboshi+One&family=Cormorant+Garamond:wght@400;500&family=Crimson+Text&family=EB+Garamond:wght@800&family=Encode+Sans+Expanded&family=Gotu&family=Libre+Bodoni:wght@700&family=Red+Rose:wght@300;400;500;600;700&family=Reem+Kufi+Ink&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+.rose {
+  font-family: 'Red Rose';
+}
+
+.anonymous {
+  font-family: 'Anonymous Pro', monospace
+}
+
+.aoboshi {
+  font-family: 'Aoboshi One', serif;
+
+}
+
+.abhaya {
+  font-family: 'Abhaya Libre', serif;
+  font-family: 800;
+}
+
+.heading {
+  line-height: 140%;
+  letter-spacing: -2px;
+}
+
+.cormogara {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.crimson {
+  font-family: 'Crimson Text', serif;
+}
+
+.ebgara {
+  font-family: 'EB Garamond', serif;
+  font-weight: 800;
+}
+
+.encodesans {
+  font-family: 'Encode Sans Expanded', sans-serif;
+
+}
+
+.bodoni {
+  font-family: 'Libre Bodoni', serif;
+}
+
+.reem {
+  font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.source {
+  font-family: 'Source Serif 4', serif;
+}
+
+.button {
+  border: 0px white solid;
+  padding: 6px;
+  width: 10rem;
+  border-radius: 0.3rem;
+  color: white;
+  box-shadow: 4px 4px 2px rgba(180, 180, 180, 0.75);
+
+}
+
+
+.colorline {
+  background: linear-gradient(to bottom,
+      rgb(255, 0, 0) -5%,
+
+      rgb(255, 174, 0) 50%,
+      /* Transition from red to blue at 75% */
+      rgb(255, 0, 0) 105%
+      /* Complete the gradient with blue at 100% */
+    );
+}
+
+.glow {
+  box-shadow:
+    inset 0 0 5px #fff,
+    /* inner white */
+
+    0 0 5px #fff,
+    /* outer white */
+    -1px 0 8px #f0f,
+    /* outer left magenta */
+    1px 0 8px #0ff;
+}
+
+.greybxg {
+  background: linear-gradient(143.7deg, rgb(23, 22, 22) 0%, rgb(61, 59, 59))
+}
+
+.funnel {
+  margin-top: -2rem;
+}
+
+.step {
+  max-width: 16rem;
+  min-width: 16rem;
+  margin-top: 0.3rem;
+  transform: translateY(1rem);
+}
+
+.steps-outer {
+  margin-left: 25%;
+  position: absolute;
+}
+
+.cf {
+  margin-top: -8rem;
+}
+
+.cf1 {
+  margin-top: -6rem;
+}
+
+.cf2 {
+  margin-left: -2rem;
+}
+
+.t1 {
+  margin-top: 0rem;
+
+}
+
+.t2 {
+  margin-top: -8rem;
+}
+
+.t3 {
+  margin-top: -4.5rem;
+}
+
+#scroller1 {
+  width: max-content;
+ 
+}
+
+#scroller2 {
+  width: max-content;
+}
+
+
+.scroller-container {
+ 
+  mask: linear-gradient(90deg, transparent, rgb(0, 0, 0 ) 18%, rgb(0, 0, 0) 82%, transparent);
+}
