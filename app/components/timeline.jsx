@@ -7,7 +7,7 @@ import Linestopover from "./linestopovercombo";
 import Funnel from "./funnel";
 import ContactForm from "./contactform";
 import Testimonial from "./testimonial";
-import Blackwire from "./blackWire";
+
 
 const linestopoverProps = { name: "Sales Funnels", imgSrc: "funnel.svg" ,component:<Funnel/>};
 const linestopoverProps2 = { name: "Reviews & Testimonials", imgSrc: "reviewfeature.svg" ,component:<Testimonial/>};
