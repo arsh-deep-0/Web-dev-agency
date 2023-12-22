@@ -3,13 +3,12 @@ function Feature(props) {
       <div className="w-full tlfeature opacity-20">
         <div className="text-white text-2xl text-center mt-14 encodesans">{props.name}</div>
         {props.component}
-        <div className="greybg m-4 rounded-md p-2 border border-white border-1">
-          <ul className="text-white flex flex-col crimson text-base">
-            <li>Helps Streamline the Customer Journey.</li>
-            <li>Sorting and Ranking Your Leads.</li>
-            <li>Precise Forecasting of Sales.</li>
-            <li>Improved Customer Targeting.</li>
-            <li>Increased Conversion Rates.</li>
+        <div className="m-4 rounded-md p-2 ">
+          <ul className="text-white flex flex-col serif text-lg feature">
+            <li>The only 4 things potential clients want from a web designer and why most people fail to deliver them</li>
+            <li>The #1 mistake 95% of web designers make and how to make sure you steer clear of it</li>
+            <li>My favorite tactics for changing your self-image and boosting your confidence.</li>
+           
           </ul>
         </div>
       </div>

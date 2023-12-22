@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div className=' bg-white flex items-center justify-between px-4 py-6 mr-0 w-full'>
+      <div className='  flex items-center justify-between px-4 py-6 mr-0 w-full'>
         <div className='flex gap-1'>
           <img src="logo.svg" alt="" />
           <h1 className='text-black bodoni text-lg font-bold lg:text-2xl'>Design<span className='text-red-500'>X</span>company</h1>

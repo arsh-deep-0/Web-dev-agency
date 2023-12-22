@@ -15,28 +15,35 @@ import Portfolio from '../components/portfolio';
 import Pricing from '../components/pricing';
 import Timeline from "../components/timeline";
 import Wire from "../components/wire";
+import Gallery from "../components/gallery";
+import Galleryheading from "../components/galleryheading";
+import BlackWire from "../components/blackwire";
 
 
 export default function Home() {
-    
+
 
     return <>
-        <div >
-            <Navbar />
-            <Trustpilot />
-            <Wire/>
-            <Heading />
-            <Subheading />
-            <Buttons name1={'See Plans'} name2={"Let's Talk"} />
-            <Testimonials />
-            <ReviewsBox />
-            <House />
+        <div>
+            <div>
+                <Wire />
+                <Navbar />
+                <Trustpilot />
+                <Heading />
+                <Subheading />
+                <Buttons name1={'See Plans'} name2={"Let's Talk"} />
+                <Testimonials />
+                <ReviewsBox />
+                <Wire />
+                <House />
+            </div>
             <Companies />
-            <Timeline/>
+            <Timeline />
+            <Galleryheading />
+            <Gallery />
+            <Buttons name1={'See Plans'} name2={"Let's Talk"} />
             <Portfolio />
             <Pricing />
-          
-         
         </div>
 
     </>

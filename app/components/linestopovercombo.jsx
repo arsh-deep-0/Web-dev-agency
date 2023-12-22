@@ -37,46 +37,46 @@ function Linestopover(props) {
             }
             );
 
-            gsap.to('.tlcircle',{
+            gsap.to('.tlcircle', {
                 background: "rgba(255,255,255)",
                 scrollTrigger: {
                     trigger: ".heads",
-                        start: "top center-=32",
-                        toggleClass: { targets: ".tlcircle", className: "glow" },
-                        toggleActions: `restart reverse restart reverse`,
+                    start: "top center-=32",
+                    toggleClass: { targets: ".tlcircle", className: "glow" },
+                    toggleActions: `restart reverse restart reverse`,
                 }
             })
 
-            gsap.to('.tlfeature',{
-                opacity:1,
+            gsap.to('.tlfeature', {
+                opacity: 1,
                 scrollTrigger: {
                     trigger: ".heads",
-                        start: "top center-=30",
-                        toggleClass: { targets: ".tlcircle", className: "glow" },
-                        toggleActions: `restart reverse restart reverse`,
+                    start: "top center-=30",
+                    toggleClass: { targets: ".tlcircle", className: "glow" },
+                    toggleActions: `restart reverse restart reverse`,
                 }
             })
 
-            gsap.from('.funnel-piece',{
-                
-                opacity:0,
-                y:60,
-                stagger:0.2,
-                ease:'sine.Out',
-                scrollTrigger:{
+            gsap.from('.funnel-piece', {
+
+                opacity: 0,
+                y: 60,
+                stagger: 0.2,
+                ease: 'sine.Out',
+                scrollTrigger: {
                     trigger: ".heads",
                     start: "top center-=32",
                     toggleActions: "restart reverse restart reverse ",
                 }
             })
 
-            gsap.from('.step',{
-                delay:0.5,
-                opacity:0,
-                y:60,
-                stagger:0.2,
-                ease:'sine.Out',
-                scrollTrigger:{
+            gsap.from('.step', {
+                delay: 0.5,
+                opacity: 0,
+                y: 60,
+                stagger: 0.2,
+                ease: 'sine.Out',
+                scrollTrigger: {
                     trigger: ".heads",
                     start: "top center-=32",
                     toggleActions: "restart reverse restart reverse ",
@@ -86,7 +86,7 @@ function Linestopover(props) {
 
         }, apptl);
 
-       
+
 
         return () => ctx.revert();
 
@@ -96,8 +96,10 @@ function Linestopover(props) {
         <div ref={apptl} className="flex">
             <Timelinestopover />
             <Line />
-             <Feature {...props} /> 
-           
+            <div className="gradientblue ml-4 my-8 rounded-md">
+                <Feature {...props} />
+            </div>
+
         </div>
 
     </>

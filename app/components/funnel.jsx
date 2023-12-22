@@ -1,7 +1,7 @@
 function Funnel() {
     return <>
       
-        <div className="w-5/6 flex my-16 items-start justify-start">
+        <div className="w-full flex my-16 items-start justify-start">
             <div className="w-1/2 flex flex-col items-center">
                 <img className="w-48 z-50 relative funnel-piece" src="sf1.svg" alt="" />
                 <img className="w-40  z-40 relative funnel funnel-piece " src="sf2.svg" alt="" />
