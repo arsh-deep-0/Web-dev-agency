@@ -1,6 +1,6 @@
 function Feature(props) {
     return (
-      <div className="w-full tlfeature opacity-20">
+      <div className="w-full tlfeature opacity-0">
         <div className="text-white text-2xl text-center mt-14 encodesans">{props.name}</div>
         {props.component}
         <div className="m-4 rounded-md p-2 ">

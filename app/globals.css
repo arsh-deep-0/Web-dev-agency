@@ -124,14 +124,15 @@ body {
 
 
 .step {
-  max-width: 14rem;
-  min-width: 14rem;
-  margin-top: 0.3rem;
-  transform: translateY(1.75rem) translateX(-4rem);
+
+  max-width: 12rem;
+  min-width: 12rem;
+  margin-bottom: 0.5rem;
+  transform: translateY(1rem) translateX(-4rem);
 }
 
 .steps-outer {
-  margin-left: 40%;
+  margin-left: 35%;
   position: absolute;
 }
 

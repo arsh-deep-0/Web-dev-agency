@@ -93,10 +93,10 @@ function Linestopover(props) {
     }, [])
 
     return <>
-        <div ref={apptl} className="flex">
+        <div ref={apptl} className="flex pr-2">
             <Timelinestopover />
             <Line />
-            <div className="gradientblue ml-4 my-8 rounded-md">
+            <div className="gradientblue ml-4 mb-8 rounded-md">
                 <Feature {...props} />
             </div>
 
