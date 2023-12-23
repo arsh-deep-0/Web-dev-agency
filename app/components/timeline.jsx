@@ -18,9 +18,9 @@ function Timeline() {
     return <>
         <div className="px-2 py-16 black-wire">
        
-            <div className="px-8">
-                <h2 className="text-white text-4xl  text-center aoboshi" >Lets look at <br /> <span className="text-4xl text-red-600">What we Offer </span></h2>
-                <h3 className="text-white text-lg text-center pt-4 crimson ">Our Features</h3>
+            <div className="">
+                <h2 className="text-white text-4xl  text-center aoboshi py-8" >Lets look at <br /> <span className="text-5xl text-red-600 ">What we Offer </span></h2>
+                <h3 className="text-white text-xl text-center pt-4 crimson ">Our Features</h3>
             </div>
           
             <div className="py-4">

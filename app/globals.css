@@ -209,7 +209,7 @@ li{
   background: gray;
   background: linear-gradient(180deg, gray ,rgb(23, 23, 23), black);
   background: linear-gradient(180deg, #0094ff, #002139);
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.477),rgba(0, 0, 0, 0.477),black);
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.477),rgba(0, 0, 0, 0.777),black);
   width: 95%;
   box-shadow: 0px 2px 4px rgb(255, 255, 255,0.34);
 }
