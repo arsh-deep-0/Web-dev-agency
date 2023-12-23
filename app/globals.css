@@ -208,6 +208,7 @@ li{
   background: linear-gradient(180deg,rgb(47, 4, 141) 0%, rgb(12, 2, 72) 25%, rgb(15, 2, 62) 75%,rgb(10, 2, 42) 100% );
   background: gray;
   background: linear-gradient(180deg, gray ,rgb(23, 23, 23), black);
+  background: linear-gradient(180deg, #0094ff, #002139);
   width: 95%;
   box-shadow: 0px 2px 4px rgb(255, 255, 255,0.34);
 }
