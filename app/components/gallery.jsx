@@ -10,14 +10,14 @@ function Gallery() {
             opacity:0,
             x:25,
             
-            stagger: 0.4,
+            stagger: 0.5,
             ease: 'linear',
             scrollTrigger: {
                 trigger: ".gallery-container",
                 start: "top center+=210",
                 end:"top center+=50",
                 toggleActions: "restart reverse restart reverse ",
-                scrub:true
+              
             }
         }
         );
