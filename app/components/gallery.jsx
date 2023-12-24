@@ -24,7 +24,7 @@ function Gallery() {
     },[]);
 
     return <div className="justify-center  flex w-full">
-        <div className="flex gallery-container items-center justify-center">
+        <div className="flex gallery-container items-center justify-center overflow-hidden">
             <div>
                 <img className="kitchen" src="side handle.svg" alt="" />
             </div>
