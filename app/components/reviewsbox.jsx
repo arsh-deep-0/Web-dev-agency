@@ -5,7 +5,7 @@ import { useState } from "react";
 function ReviewsBox (){
     const photos = ["happy.svg","punjabi.svg", "woman.svg", "laptop-man.svg", "builder.svg"];
 
-    const reviews =["Flawless execution and superb communication throughout the project. Our website reflects sheer brilliance—kudos to the talented team!",
+    const reviews =["Impeccable execution and outstanding communication. Our website exudes sheer brilliance—kudos to the talented team!",
     "Absolutely thrilled with the exceptional creativity and attention to detail in our website design—exceeded our expectations!",
     "Professionalism at its finest! Our website not only looks stunning but also functions seamlessly.",
     "Incredible teamwork and a keen eye for aesthetics—our website is a masterpiece! Thank you for an outstanding job.",
@@ -43,7 +43,7 @@ function ReviewsBox (){
     <div className=" flex justify-center py-4  w-full">
         <div className="  flex items-center justify-center">
             <p className="absolute  review-text w-4/6 ml-6 text-center mt-2 text-sm crimson">{reviewText}</p>
-            <div className="absolute  flex items-center justify-center bg-black rounded-full h-16 w-16 review-photo">
+            <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo">
                 <img className="w-full" src={imageSrc} alt="" />
             </div>
             <p className="client-name absolute text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs" >{clientRole}</span></p>
