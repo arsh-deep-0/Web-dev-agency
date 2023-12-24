@@ -14,8 +14,8 @@ function Gallery() {
             ease: 'sine.Out',
             scrollTrigger: {
                 trigger: ".gallery-container",
-                start: "top bottom+90",
-                end:"top bottom+180",
+                start: "top center-=90",
+                end:"top center",
                markers: true,
                 toggleActions: "restart reverse restart reverse ",
                 scrub:true
