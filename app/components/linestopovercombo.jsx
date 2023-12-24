@@ -60,8 +60,8 @@ function Linestopover(props) {
             gsap.from('.funnel-piece', {
 
                 opacity: 0,
-                y: 60,
-                stagger: 0.2,
+                y: 35,
+                stagger: 0.45,
                 ease: 'sine.Out',
                 scrollTrigger: {
                     trigger: ".heads",

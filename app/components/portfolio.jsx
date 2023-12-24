@@ -62,12 +62,7 @@ function Portfolio() {
                     <p className="text-center antics">Universal custom kitchens</p>
                    
                 </div>
-                {/* <div className="flex items-center py-8 gap-0">
-                    <img className="scroller2" src=" project-1.svg" alt="" />
-                    <img className="scroller2"  src=" project-2.svg" alt="" />
-                    <img className="scroller2"  src=" project-1.svg" alt="" />
-                    <img className="scroller2"  src=" project-2.svg" alt="" />
-                </div> */}
+                
             </div>
 
 
