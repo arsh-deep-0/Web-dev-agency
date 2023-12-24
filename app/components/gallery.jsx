@@ -15,6 +15,7 @@ function Gallery() {
             scrollTrigger: {
                 trigger: ".gallery-container",
                 start: "top bottom+90",
+                end:"top bottom+180",
                markers: true,
                 toggleActions: "restart reverse restart reverse ",
                 scrub:true
