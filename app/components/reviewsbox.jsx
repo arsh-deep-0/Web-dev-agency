@@ -32,15 +32,7 @@ function ReviewsBox (){
             setclientName(clients[index]);
             setclientBusiness(businesses[index]);
             setclientRole(roles[index]);
-            gsap.to('.review-photo',{
-                opacity:0,
-                duration:200
-            })
-            gsap.to('.review-photo',{
-                opacity:1,
-                delay:200,
-                duration:200
-            })
+           
         }, 4000);
 
        
