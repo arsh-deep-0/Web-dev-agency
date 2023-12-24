@@ -8,7 +8,7 @@ function Gallery() {
     useEffect(() => {
         gsap.from(".kitchen", {
             opacity:0,
-            y:25,
+            x:25,
             
             stagger: 0.2,
             ease: 'sine.Out',
@@ -25,18 +25,18 @@ function Gallery() {
     return <div className="justify-center  flex w-full">
         <div className="flex gallery-container items-center justify-center">
             <div>
-                <img src="side handle.svg" alt="" />
+                <img className="kitchen" src="side handle.svg" alt="" />
             </div>
             <div className="flex flex-col ">
                 <div className="flex ">
-                    <img src="Heading-gallery.svg" alt="" />
+                    <img className="kitchen" src="Heading-gallery.svg" alt="" />
                 </div>
                 <div className=" flex ">
                     <div>
-                        <img src="main-kitchen.svg" alt="" />
+                        <img className="kitchen" src="main-kitchen.svg" alt="" />
                     </div>
                     <div>
-                        <img src="gallery-description.svg" alt="" />
+                        <img className="kitchen" src="gallery-description.svg" alt="" />
                     </div>
                 </div>
                 <div className="kitchen-container flex ">
