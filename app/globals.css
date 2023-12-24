@@ -221,3 +221,34 @@ li{
 .shadow{
   text-shadow: 1px 2px 5px  black;
 }
+
+.reviews-box{
+  height: 203px;
+  width: 360px;
+  background: url('/reviews-box.svg');
+  background-repeat: no-repeat;
+}
+
+.review-photo{
+  margin-top: 38%;
+  padding: 0.1rem;
+  margin-left: -80%;
+  overflow: hidden;
+}
+
+.client-name{
+margin-top: 32%;
+margin-left: -34%;
+
+}
+
+.client-role{
+
+  color: red;
+}
+
+
+.client-business{
+  margin-top: 34%;
+  margin-left: 40%;
+}
