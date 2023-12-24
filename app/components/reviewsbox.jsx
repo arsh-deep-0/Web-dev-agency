@@ -12,7 +12,7 @@ function ReviewsBox (){
     "Spectacular design work! The user interface is intuitive, and the site's responsiveness is top-notch. Impressed beyond words."];
     const clients=["Diego Ramirez","Dalwinder Singh","Yuki Tanaka ","Jacob Thompson","Oliver Dufour"];
 
-    const businesses=["UNNIVERSAL CUSTOM KITCHENS","RENOVATEXPERTS","UNNITRICK","SPEEDSCALEZ","REMOELRISE"];
+    const businesses=["UNNIVERSAL  KITCHENS","RENOVATEXPERTS","UNNITRICK","SPEEDSCALEZ","REMOELRISE"];
 
     const roles=[" Business Owner"," Business Manager"," Lead Remodeler"," Coordinator", " Owner"];
 
@@ -27,6 +27,17 @@ function ReviewsBox (){
         const interval = setInterval(() => {
             setIndex(prevIndex => (prevIndex + 1) % photos.length);
             console.log(index);
+            gsap.to('.absolute',{
+                opacity:0,
+                duration:2000,
+                y:10,
+            })
+            gsap.to('.absolute',{
+                delay:200,
+                opacity:1,
+                duration:2000,
+                y:0
+            })
             setImageSrc(photos[index]);
             setreviewText(reviews[index]);
             setclientName(clients[index]);
@@ -43,7 +54,7 @@ function ReviewsBox (){
     <div className=" flex justify-center py-4  w-full">
         <div className="  flex items-center justify-center">
             <p className="absolute  review-text w-4/6 ml-6 text-center mt-2 text-sm crimson">{reviewText}</p>
-            <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo">
+            <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet">
                 <img className="w-full" src={imageSrc} alt="" />
             </div>
             <p className="client-name absolute text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs " >{clientRole}</span></p>
