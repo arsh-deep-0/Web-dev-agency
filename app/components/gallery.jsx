@@ -14,9 +14,10 @@ function Gallery() {
             ease: 'sine.Out',
             scrollTrigger: {
                 trigger: ".gallery-container",
-                start: "top center-48",
+                start: "top bottom+90",
                markers: true,
                 toggleActions: "restart reverse restart reverse ",
+                scrub:true
             }
         }
         );
