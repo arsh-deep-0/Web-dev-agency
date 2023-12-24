@@ -57,9 +57,9 @@ function Portfolio() {
             <div  className=" flex items-center text-white">
                 <div className="flex-col items-center py-8 gap-0 ">
                     <img className="" src=" project-1.svg" alt="" />
-                    <p className="text-center">HOMEZ</p>
+                    <p className="text-center antics">HOMEZ</p>
                     <img className=""  src=" project-2.svg" alt="" />
-                    <p className="text-center">Universal custom kitchens</p>
+                    <p className="text-center antics">Universal custom kitchens</p>
                    
                 </div>
                 {/* <div className="flex items-center py-8 gap-0">

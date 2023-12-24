@@ -6,7 +6,7 @@ function Pricing (){
             <p className="rose text-center text-3xl">Standard</p>
             <p>Best for small businesses</p>
             <p className="aoboshi text-3xl mt-4">$699</p>
-            <button className="button crimson bg-red-600 my-4">Get Started Today</button>
+            <button className="button crimson  bg-blue-voilet my-4">Get Started Today</button>
             <p>Book a call</p>
             <br />
             <p className="my-4">Whats included</p>
@@ -24,7 +24,7 @@ function Pricing (){
             <p className="rose text-center text-3xl">Pro</p>
             <p>Best for small businesses</p>
             <p className="aoboshi text-3xl mt-4">$799</p>
-            <button className="button crimson bg-red-600 my-4">Get Started Today</button>
+            <button className="button crimson  bg-blue-voilet my-4">Get Started Today</button>
             <p>Book a call</p>
             <br />
             <p className="my-4">Whats included</p>
@@ -42,7 +42,7 @@ function Pricing (){
             <p className="rose text-center text-3xl">Custom</p>
             <p>Best for small businesses</p>
             <p className="aoboshi text-3xl mt-4">$999</p>
-            <button className="button crimson bg-red-600 my-4">Get Started Today</button>
+            <button className="button crimson  bg-blue-voilet my-4">Get Started Today</button>
             <p>Book a call</p>
             <br />
             <p className="my-4">Whats included</p>

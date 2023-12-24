@@ -14,7 +14,7 @@ function Linestopover(props) {
         let ctx = gsap.context(() => {
 
             gsap.to(".timelinestopper", {
-                marginTop: '44rem',
+                marginTop: '58rem',
                 duration: 15,
                 scrollTrigger: {
                     trigger: ".heads",
@@ -26,7 +26,7 @@ function Linestopover(props) {
             );
 
             gsap.to(".colorline", {
-                height: '48rem',
+                height: '62rem',
                 duration: 15,
                 scrollTrigger: {
                     trigger: ".heads",

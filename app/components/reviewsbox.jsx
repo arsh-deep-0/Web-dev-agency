@@ -46,10 +46,10 @@ function ReviewsBox (){
             <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo">
                 <img className="w-full" src={imageSrc} alt="" />
             </div>
-            <p className="client-name absolute text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs" >{clientRole}</span></p>
+            <p className="client-name absolute text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs " >{clientRole}</span></p>
 
             
-            <p className="client-business absolute text-xs w-36 text-center ebgara">{clientBusiness}</p>
+            <p className="client-business absolute text-xs w-36 text-center ebgara blue-text">{clientBusiness}</p>
         <img  src="reviews-box.svg" alt="trustpilot reviews ratings" />
            
         </div>

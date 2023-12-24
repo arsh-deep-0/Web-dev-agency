@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Anonymous+Pro:wght@400;700&family=Aoboshi+One&family=Cormorant+Garamond:wght@400;500&family=Crimson+Text&family=EB+Garamond:wght@800&family=Encode+Sans+Expanded&family=Gotu&family=Libre+Bodoni:wght@700&family=Red+Rose:wght@300;400;500;600;700&family=Reem+Kufi+Ink&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Abhaya+Libre:wght@800&family=Anonymous+Pro:wght@400;700&family=Aoboshi+One&family=Cormorant+Garamond:wght@400;500&family=Crimson+Text&family=EB+Garamond:wght@800&family=Encode+Sans+Expanded&family=Gotu&family=Libre+Bodoni:wght@700&family=Red+Rose:wght@300;400;500;600;700&family=Reem+Kufi+Ink&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,6 +34,9 @@ body {
   font-family: 'Red Rose';
 }
 
+.antics{
+  font-family: 'Antic Slab', serif;
+}
 .anonymous {
   font-family: 'Anonymous Pro', monospace
 }
@@ -103,6 +106,8 @@ body {
       rgb(255, 0, 0) 105%
       /* Complete the gradient with blue at 100% */
     );
+
+    background: linear-gradient(to bottom , #9e00ff,#0094ff );
 }
 
 .glow {
@@ -194,7 +199,7 @@ body {
 
 
 li{
-  background-image: url('/red tick.svg');
+  background-image: url('/blue-tick.svg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 1.75rem;
@@ -204,12 +209,12 @@ li{
   list-style-type: none;
 }
 
+ul.feature li {
+  background-image: url('/white-tick.svg');
+}
+
 .gradientblue{
-  background: linear-gradient(180deg,rgb(47, 4, 141) 0%, rgb(12, 2, 72) 25%, rgb(15, 2, 62) 75%,rgb(10, 2, 42) 100% );
-  background: gray;
-  background: linear-gradient(180deg, gray ,rgb(23, 23, 23), black);
-  background: linear-gradient(180deg, #0094ff, #002139);
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.477),rgba(0, 0, 0, 0.777),black);
+  background: linear-gradient(32deg , #0095ff, #9e00ff99);
   width: 95%;
   box-shadow: 0px 2px 4px rgb(255, 255, 255,0.34);
 }
@@ -229,6 +234,10 @@ li{
   background-repeat: no-repeat;
 }
 
+.review-text{
+  color: gray;
+}
+
 .review-photo{
   margin-top: 38%;
   padding: 0.1rem;
@@ -240,12 +249,12 @@ li{
 .client-name{
 margin-top: 36%;
 margin-left: -32%;
-
+color: gray;
 }
 
 .client-role{
 
-  color: red;
+  color: gray;
 }
 
 
@@ -259,4 +268,8 @@ margin-left: -32%;
   background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg-blue-voilet{
+  background:linear-gradient(32deg, #0094ff, #9e00ff); ;
 }
