@@ -110,6 +110,9 @@ body {
     background: linear-gradient(to bottom , #9e00ff,#0094ff );
 }
 
+.timelinestopover{
+  margin-top: 4.5rem;
+}
 .glow {
   box-shadow:
     inset 0 0 5px #fff,
