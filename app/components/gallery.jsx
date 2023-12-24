@@ -10,12 +10,12 @@ function Gallery() {
             opacity:0,
             x:25,
             
-            stagger: 0.2,
+            stagger: 0.4,
             ease: 'sine.Out',
             scrollTrigger: {
                 trigger: ".gallery-container",
                 start: "top center+=210",
-                end:"top center+=100",
+                end:"top center+=50",
                markers: true,
                 toggleActions: "restart reverse restart reverse ",
                 scrub:true
