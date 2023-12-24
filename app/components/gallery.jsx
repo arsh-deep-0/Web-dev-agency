@@ -7,8 +7,8 @@ function Gallery() {
 
     useEffect(() => {
         gsap.from(".kitchen", {
-            opacity:50,
-            y:50,
+            opacity:0,
+            y:25,
             
             stagger: 0.2,
             ease: 'sine.Out',
