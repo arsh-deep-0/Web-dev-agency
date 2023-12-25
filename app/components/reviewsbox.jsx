@@ -38,13 +38,13 @@ function ReviewsBox() {
                     setclientRole(roles[index]);
 
                     gsap.to('.review', {
-                        delay:0.8,
+                        delay:1,
                         opacity:1,
-                        duration: 1.2,
+                        duration: 0.5,
                     });
                 },
             });
-        }, 6000);
+        }, 7000);
 
         return () => clearInterval(interval); // Clean up the interval           
     }, [index, photos, reviews, clients, businesses, roles]);
