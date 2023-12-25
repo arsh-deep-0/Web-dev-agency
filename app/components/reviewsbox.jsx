@@ -44,7 +44,7 @@ function ReviewsBox() {
                     });
                 },
             });
-        }, 7000);
+        }, 4000);
 
         return () => clearInterval(interval); // Clean up the interval           
     }, [index, photos, reviews, clients, businesses, roles]);
