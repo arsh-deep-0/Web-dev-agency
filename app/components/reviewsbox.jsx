@@ -28,8 +28,8 @@ function ReviewsBox() {
             setIndex(prevIndex => (prevIndex + 1) % photos.length);
 
             gsap.to('.review', {
-                scale: 0.5,
-                duration: 0.3,
+                opacity:0,
+                duration: 0.5,
                 onComplete: () => {
                     setImageSrc(photos[index]);
                     setreviewText(reviews[index]);
@@ -38,12 +38,12 @@ function ReviewsBox() {
                     setclientRole(roles[index]);
 
                     gsap.to('.review', {
-                        scale: 1,
-                        duration: 0.4,
+                        opacity:1,
+                        duration: 0.9,
                     });
                 },
             });
-        }, 4000);
+        }, 5000);
 
         return () => clearInterval(interval); // Clean up the interval           
     }, [index, photos, reviews, clients, businesses, roles]);

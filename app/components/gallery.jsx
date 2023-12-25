@@ -11,12 +11,12 @@ function Gallery() {
             
             scale:0,
             
-            stagger: 0.1,
+            stagger: 0.05,
             ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
                 start: "top center+=210",
-                end:"top center-=90",
+                end:"top center",
                 scrub: true,
                  toggleActions: "restart none restart none ",
               
