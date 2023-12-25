@@ -9,8 +9,8 @@ function Gallery() {
         gsap.from(".gallery-container", {
            
             
-            scale:0,
-            
+            // scale:0,
+            x:30,
             
             ease: 'sine.out',
             scrollTrigger: {
