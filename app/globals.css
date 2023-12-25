@@ -96,7 +96,7 @@ body {
 }
 
 .button {
-  border: 0px white solid;
+  border: 0.25px white solid;
   padding: 6px;
   width: 10rem;
   border-radius: 0.3rem;
