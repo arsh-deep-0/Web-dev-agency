@@ -15,7 +15,7 @@ function Gallery() {
             ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
-                start: "top center+=500",
+                start: "top center+=400",
                 end:"top center+=300",
                 scrub: 1,
                  toggleActions: "restart none restart none ",
