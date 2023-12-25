@@ -29,20 +29,20 @@ function ReviewsBox (){
             console.log(index);
             gsap.to('.absolute',{
                 scale:0,
-                duration:1000,
+                duration:250,
                 
             })
-            gsap.to('.absolute',{
-                delay:200,
-                scale:1,
-                duration:1000,
-            })
+           
             setImageSrc(photos[index]);
             setreviewText(reviews[index]);
             setclientName(clients[index]);
             setclientBusiness(businesses[index]);
             setclientRole(roles[index]);
-           
+            gsap.to('.absolute',{
+                delay:200,
+                scale:1,
+                duration:1000,
+            })
         }, 4000);
 
        
