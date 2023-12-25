@@ -16,7 +16,7 @@ function Gallery() {
             scrollTrigger: {
                 trigger: ".gallery-container",
                 start: "top center+=210",
-                
+                scrub: true,
                  toggleActions: "restart none restart none ",
               
             }
