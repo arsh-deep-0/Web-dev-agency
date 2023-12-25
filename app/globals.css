@@ -233,6 +233,8 @@ ul.feature li {
 
 .black-wire{
   background: url('/black-wire.svg');
+  background-position: center;
+  
 }
 
 .shadow{

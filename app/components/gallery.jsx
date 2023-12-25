@@ -7,7 +7,7 @@ function Gallery() {
 
     useEffect(() => {
         gsap.from(".kitchen", {
-            opacity:0,
+           
             x:25,
             
             stagger: 0.1,
