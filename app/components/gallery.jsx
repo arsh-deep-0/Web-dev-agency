@@ -8,10 +8,11 @@ function Gallery() {
     useEffect(() => {
         gsap.from(".kitchen", {
            
-            x:25,
+            
+            scale:0,
             
             stagger: 0.1,
-            ease: 'linear',
+            ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
                 start: "top center+=210",
