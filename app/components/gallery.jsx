@@ -10,7 +10,7 @@ function Gallery() {
            
             
             // scale:0,
-            x:30,
+            x:200,
             
             ease: 'sine.out',
             scrollTrigger: {
