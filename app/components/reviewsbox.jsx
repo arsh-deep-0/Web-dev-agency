@@ -26,24 +26,23 @@ function ReviewsBox (){
     useEffect(()=>{
         const interval = setInterval(() => {
             setIndex(prevIndex => (prevIndex + 1) % photos.length);
-            console.log(index);
-            gsap.to('.absolute',{
-                scale:0,
-                duration:250,
-                
-            })
+            
            
             setImageSrc(photos[index]);
             setreviewText(reviews[index]);
             setclientName(clients[index]);
             setclientBusiness(businesses[index]);
             setclientRole(roles[index]);
-            gsap.to('.absolute',{
-                delay:200,
-                scale:1,
-                duration:1000,
-            })
+            
         }, 4000);
+
+        const interval2= setInterval(()=>{
+            gsap.from('.review',{
+                
+                scale:0,
+                duration:700,
+            })
+        }, 4000)
 
        
 
@@ -52,14 +51,14 @@ function ReviewsBox (){
     return <>
     <div className=" flex justify-center py-4 mb-12  pl-4  w-full ">
         <div className="  flex items-center justify-center">
-            <p className="absolute  review-text w-4/6 ml-6 text-center mt-2 text-sm crimson">{reviewText}</p>
-            <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet">
+            <p className="review absolute  review-text w-4/6 ml-6 text-center mt-2 text-sm crimson">{reviewText}</p>
+            <div className="review absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet">
                 <img className="w-full" src={imageSrc} alt="" />
             </div>
-            <p className="client-name absolute text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs " >{clientRole}</span></p>
+            <p className="review client-name absolute text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs " >{clientRole}</span></p>
 
             
-            <p className="client-business absolute text-xs w-36 text-center ebgara blue-text">{clientBusiness}</p>
+            <p className="review client-business absolute text-xs w-36 text-center ebgara blue-text">{clientBusiness}</p>
         <img  src="reviews-box.svg" alt="trustpilot reviews ratings" />
            
         </div>
