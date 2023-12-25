@@ -248,7 +248,7 @@ ul.feature li {
 
 .review-text{
   color: gray;
-  margin-top: -5%;
+  margin-top: 0%;
   height: 5rem;
 }
 
@@ -278,7 +278,7 @@ text-align: start;
   width: 10rem;
   height: 2rem;
   margin-top: 42%;
-  margin-left: 35%;
+  margin-left: 33%;
   text-align: end;
 }
 
