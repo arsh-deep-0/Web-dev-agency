@@ -51,7 +51,7 @@ function ReviewsBox (){
         return () => clearInterval(interval); // Clean up the interval           
     },)
     return <>
-    <div className=" flex justify-center py-4 mb-12 px-4  w-full">
+    <div className=" flex justify-center py-4 mb-12 px-4  w-full ">
         <div className="  flex items-center justify-center">
             <p className="absolute  review-text w-4/6 ml-6 text-center mt-2 text-sm crimson">{reviewText}</p>
             <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet">

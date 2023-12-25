@@ -34,8 +34,9 @@ export default function Home() {
                 <Subheading />
                 <Buttons name1={'See Plans'} name2={"Book a call"} />
                 <Testimonials />
-                <ReviewsBox />
                 <Wire />
+                <ReviewsBox />
+             
                 
             </div>
             <Companies />
