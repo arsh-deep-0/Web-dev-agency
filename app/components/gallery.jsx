@@ -10,7 +10,7 @@ function Gallery() {
             opacity:0,
             x:25,
             
-            stagger: 0.2,
+            stagger: 0.15,
             ease: 'linear',
             scrollTrigger: {
                 trigger: ".gallery-container",
