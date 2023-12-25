@@ -36,7 +36,7 @@ export default function Home() {
                 <Testimonials />
                 <ReviewsBox />
                 <Wire />
-                <House />
+                
             </div>
             <Companies />
             <Timeline />
