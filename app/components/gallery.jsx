@@ -11,7 +11,7 @@ function Gallery() {
             
             scale:0,
             
-            stagger: 0.05,
+            stagger: 0.075,
             ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
