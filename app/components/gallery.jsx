@@ -15,8 +15,8 @@ function Gallery() {
             ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
-                start: "top center+=300",
-                end:"top center+=200",
+                start: "top center+=400",
+                end:"top center+=300",
                 scrub: true,
                  toggleActions: "restart none restart none ",
               
@@ -33,8 +33,8 @@ function Gallery() {
             ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
-                start: "top center+=210",
-                end:"top center",
+                start: "top center+=290",
+                end:"top center+=80",
                 scrub: true,
                  toggleActions: "restart none restart none ",
               
