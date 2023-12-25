@@ -234,7 +234,7 @@ ul.feature li {
 .black-wire{
   background: url('/black-wire.svg');
   background-position: center;
-  
+
 }
 
 .shadow{
@@ -279,7 +279,7 @@ text-align: start;
 .client-business{
   width: 10rem;
   height: 2rem;
-  margin-top: 42%;
+  margin-top: 40%;
   margin-left: 33%;
   text-align: end;
 }
