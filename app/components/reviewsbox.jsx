@@ -33,10 +33,9 @@ function ReviewsBox (){
                 
             })
             gsap.to('.absolute',{
-                delay:1000,
+                delay:200,
                 scale:1,
-                duration:500,
-                y:0
+                duration:1000,
             })
             setImageSrc(photos[index]);
             setreviewText(reviews[index]);
