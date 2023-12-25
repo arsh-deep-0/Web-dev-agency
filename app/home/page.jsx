@@ -32,7 +32,7 @@ export default function Home() {
                 <Trustpilot />
                 <Heading />
                 <Subheading />
-                <Buttons name1={'See Plans'} name2={"Let's Talk"} />
+                <Buttons name1={'See Plans'} name2={"Book a call"} />
                 <Testimonials />
                 <ReviewsBox />
                 <Wire />
@@ -42,7 +42,7 @@ export default function Home() {
             <Timeline />
             <Galleryheading />
             <Gallery />
-            <Buttons name1={'See Plans'} name2={"Let's Talk"} />
+            <Buttons name1={'See Plans'} name2={"Book a call"} />
             <Portfolio />
             <Pricing />
             <Footer/>

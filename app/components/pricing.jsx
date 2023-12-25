@@ -1,7 +1,7 @@
 function Pricing (){
     return <>
     <div className="flex-col bg-white  py-8 px-2 ">
-        <h2 className="text-center text-4xl mb-8 text-black aoboshi ">Pricing levels</h2>
+        <h2 className="text-center text-4xl mb-8 blue-text aoboshi ">Pricing levels</h2>
         <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2">
             <p className="rose text-center text-3xl">Standard</p>
             <p>Best for small businesses</p>
