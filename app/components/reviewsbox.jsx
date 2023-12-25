@@ -38,6 +38,7 @@ function ReviewsBox() {
                     setclientRole(roles[index]);
 
                     gsap.to('.review', {
+                        delay:0.2,
                         opacity:1,
                         duration: 1.2,
                     });

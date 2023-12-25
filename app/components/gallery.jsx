@@ -6,6 +6,24 @@ function Gallery() {
   
 
     useEffect(() => {
+        gsap.from(".gallery-container", {
+           
+            
+            scale:0,
+            
+            
+            ease: 'sine.out',
+            scrollTrigger: {
+                trigger: ".gallery-container",
+                start: "top center+=300",
+                end:"top center+=200",
+                scrub: true,
+                 toggleActions: "restart none restart none ",
+              
+            }
+        })
+
+
         gsap.from(".kitchen", {
            
             
