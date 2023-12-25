@@ -28,14 +28,14 @@ function ReviewsBox (){
             setIndex(prevIndex => (prevIndex + 1) % photos.length);
             console.log(index);
             gsap.to('.absolute',{
-                opacity:0,
-                duration:2000,
-                y:10,
+                scale:0,
+                duration:1000,
+                
             })
             gsap.to('.absolute',{
-                delay:200,
-                opacity:1,
-                duration:2000,
+                delay:1000,
+                scale:1,
+                duration:500,
                 y:0
             })
             setImageSrc(photos[index]);
@@ -51,7 +51,7 @@ function ReviewsBox (){
         return () => clearInterval(interval); // Clean up the interval           
     },)
     return <>
-    <div className=" flex justify-center py-4 mb-12 px-4  w-full ">
+    <div className=" flex justify-center py-4 mb-12  pl-4  w-full ">
         <div className="  flex items-center justify-center">
             <p className="absolute  review-text w-4/6 ml-6 text-center mt-2 text-sm crimson">{reviewText}</p>
             <div className="absolute  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet">
