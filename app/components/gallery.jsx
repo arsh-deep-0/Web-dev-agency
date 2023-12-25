@@ -35,7 +35,7 @@ function Gallery() {
                 trigger: ".gallery-container",
                 start: "top center+=290",
                 end:"top center+=80",
-                scrub: true,
+                scrub: 1,
                  toggleActions: "restart none restart none ",
               
             }
