@@ -16,7 +16,7 @@ function Gallery() {
                 trigger: ".gallery-container",
                 start: "top center+=210",
                 
-                toggleActions: "restart reverse restart reverse ",
+                 toggleActions: "restart none restart none ",
               
             }
         }

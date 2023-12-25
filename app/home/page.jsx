@@ -18,6 +18,7 @@ import Wire from "../components/wire";
 import Gallery from "../components/gallery";
 import Galleryheading from "../components/galleryheading";
 import BlackWire from "../components/blackwire";
+import Footer from "../components/footer";
 
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
             <Buttons name1={'See Plans'} name2={"Let's Talk"} />
             <Portfolio />
             <Pricing />
+            <Footer/>
         </div>
 
     </>
