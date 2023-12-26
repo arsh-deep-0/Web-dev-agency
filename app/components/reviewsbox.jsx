@@ -40,11 +40,11 @@ function ReviewsBox() {
                     gsap.to('.review', {
                         delay:1,
                         opacity:1,
-                        duration: 0.5,
+                        duration: 1,
                     });
                 },
             });
-        }, 4000);
+        }, 4500);
 
         return () => clearInterval(interval); // Clean up the interval           
     }, [index, photos, reviews, clients, businesses, roles]);
