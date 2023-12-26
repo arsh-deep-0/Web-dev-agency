@@ -20,7 +20,7 @@ function Heading() {
         opacity: 0,
         stagger: 0.15,
         duration: 1.2,
-        ease: 'back.inOut',
+        ease: 'sine.out',
         onComplete: () => {
           mainTextSplit.revert();
         },
