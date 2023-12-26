@@ -35,9 +35,9 @@ function Heading() {
   return (
     <div className='z-10 relative flex justify-center items-center py-6'>
       <p className='text-reveal px-2 aoboshi heading text-3xl text-center font-normal md:text-5xl lg:text-6xl'>
-        <span className='main-text target'>A complete web solution to all </span>
-        <span className='blue-text main-text target'>Home Remodelling & Construction</span>
-        <span className='main-text target'> Businesses</span>
+        <span className='main-text target'>A complete web solution to all Home Remodelling & Construction Businesses</span>
+        <span className='blue-text main-text target'></span>
+        <span className='main-text target'></span>
       </p>
     </div>
   );
