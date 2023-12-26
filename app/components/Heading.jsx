@@ -1,13 +1,46 @@
-function Heading() {
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SplitType from 'split-type';
 
-    return (
-      <>
-      <div className=' z-10 relative flex justify-center  items-center py-6'>
-      <h1 className=' px-2 aoboshi heading text-3xl text-center font-normal md:text-5xl lg:text-6xl '>A complete web solution to all <span className='blue-text'>Home Remodelling & Construction</span> Businesses</h1>
-      </div>
-      
-      </>
-    )
-  }
-  
-  export default Heading
+gsap.registerPlugin(ScrollTrigger);
+
+function Heading() {
+  useEffect(() => {
+    const addTextAnimation = () => {
+      const mainText = document.querySelectorAll('.main-text');
+      const mainTextSplit = new SplitType(mainText, { types: 'words' });
+
+      gsap.from(mainTextSplit.words, {
+        scrollTrigger: {
+          trigger: mainText,
+          start: 'top 40%',
+          end: 'top 0%',
+        },
+        opacity: 0,
+        stagger: 0.15,
+        duration: 1.2,
+        ease: 'back.inOut',
+        onComplete: () => {
+          mainTextSplit.revert();
+        },
+      });
+
+     
+    };
+
+    addTextAnimation();
+  }, []);
+
+  return (
+    <div className='z-10 relative flex justify-center items-center py-6'>
+      <p className='text-reveal px-2 aoboshi heading text-3xl text-center font-normal md:text-5xl lg:text-6xl'>
+        <span className='main-text target'>A complete web solution to all </span>
+        <span className='blue-text main-text target'>Home Remodelling & Construction</span>
+        <span className='main-text target'> Businesses</span>
+      </p>
+    </div>
+  );
+}
+
+export default Heading;

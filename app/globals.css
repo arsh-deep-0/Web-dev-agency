@@ -104,7 +104,9 @@ body {
   box-shadow: 4px 4px 2px rgba(180, 180, 180, 0.75);
 
 }
-
+.target {
+  font-kerning: none;
+}
 
 .colorline {
   background: linear-gradient(to bottom,
