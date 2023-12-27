@@ -286,12 +286,13 @@ text-align: start;
 }
 
 .blue-text{
-  /* color: linear-gradient(143deg,); */
+  /* color: linear-gradient(143deg,);
   background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
   -webkit-background-clip: text;
   background-clip:text ;
   -webkit-text-fill-color: transparent;
-  color:transparent;
+  color:transparent; */
+  color:#6600ff;
 }
 
 
