@@ -1,46 +1,77 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';
-
-gsap.registerPlugin(ScrollTrigger);
+import SplitType, { TargetElement } from 'split-type';
 
 function Heading() {
   useEffect(() => {
     const addTextAnimation = () => {
-      const mainText = document.querySelectorAll('.main-text');
-      const mainTextSplit = new SplitType(mainText, { types: 'words' });
+      let myText = document.querySelectorAll('.text-reveal');
+      console.log(myText);
 
-      gsap.from(mainTextSplit.words, {
-        scrollTrigger: {
-          trigger: mainText,
-          start: 'top 40%',
-          end: 'top 0%',
-        },
-        opacity: 0,
-        stagger: 0.15,
-        duration: 1.2,
-        ease: 'sine.out',
-        onComplete: () => {
-          mainTextSplit.revert();
-        },
-      });
+      
+        const text = new SplitType(myText, { types: 'chars, words' });
 
-     
-    };
+        gsap.from(text.chars, {
+          scrollTrigger: {
+            trigger: myText,
+            start: 'top 40%',
+           
+          },
+          opacity: 0,
 
-    addTextAnimation();
-  }, []);
+          stagger: 0.035,
+          duration: 1,
+          ease: 'ease.out',
+          onComplete: () => {
+            text.revert()
+          },
+        })
+    
+    }
+    const addTextAnimation2 = () => {
+      let myText = document.querySelectorAll('.text-reveal2');
+      console.log(myText);
+
+      
+        const text = new SplitType(myText, { types: 'chars, words' });
+
+        gsap.from(text.chars, {
+          scrollTrigger: {
+            trigger: myText,
+            start: 'top 40%',
+           
+          },
+          opacity: 0,
+          
+          stagger: 0.035,
+          duration:1.05,
+          ease: 'ease.out',
+          onComplete: () => {
+            text.revert()
+          },
+        })
+    
+    }
+
+
+     addTextAnimation(); 
+     addTextAnimation2();
+
+  }, [])
+
 
   return (
-    <div className='z-10 relative flex justify-center items-center py-6'>
-      <p className='text-reveal px-2 aoboshi heading text-3xl text-center font-normal md:text-5xl lg:text-6xl'>
-        <span className='main-text target'>A complete web solution to all Home Remodelling & Construction Businesses</span>
-        <span className='blue-text main-text target'></span>
-        <span className='main-text target'></span>
-      </p>
-    </div>
-  );
+    <>
+      <div className=' z-10 relative flex justify-center  items-center py-6'>
+        <p id='target' className=' target px-2 aoboshi heading text-3xl text-center font-normal md:text-5xl lg:text-6xl '>
+          <span className='text-reveal target' >A complete web solution to all </span> 
+          <span className='text-reveal2 blue-text pr-2 target'>Home Remodelling & Construction Businesses </span>
+          </p>
+      </div>
+
+    </>
+  )
 }
 
-export default Heading;
+export default Heading
