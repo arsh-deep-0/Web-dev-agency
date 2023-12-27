@@ -19,7 +19,7 @@ function Heading() {
 
         },
         opacity: 0,
-
+        delay:6,
         stagger: 0.035,
         duration: 1,
         ease: 'ease.out',
