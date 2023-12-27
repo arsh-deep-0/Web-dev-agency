@@ -19,6 +19,7 @@ import Gallery from "../components/gallery";
 import Galleryheading from "../components/galleryheading";
 import BlackWire from "../components/blackwire";
 import Footer from "../components/footer";
+import SplashScreen from "../components/splashscreen";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
 
     return <>
         <div>
+        <SplashScreen/>
             <div>
                 <Wire />
                 <Navbar />
