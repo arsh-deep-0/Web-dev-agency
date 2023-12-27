@@ -285,7 +285,7 @@ text-align: start;
   text-align: end;
 }
 
-.blue-text{
+.bluee-text{
   /* color: linear-gradient(143deg,);
   background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
   -webkit-background-clip: text;
@@ -293,6 +293,15 @@ text-align: start;
   -webkit-text-fill-color: transparent;
   color:transparent; */
   color:#6600ff;
+}
+.blue-text{
+  color: linear-gradient(143deg,);
+  background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
+  -webkit-background-clip: text;
+  background-clip:text ;
+  -webkit-text-fill-color: transparent;
+  color:transparent; 
+  
 }
 
 
