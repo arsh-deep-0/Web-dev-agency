@@ -30,7 +30,7 @@ function Feature(props) {
           <span className="font-bold">Build Credibility:</span> Incorporate testimonials from satisfied clients on landing pages, sharing positive experiences and outcomes, fostering trust and reliability.
         </li>
         <li>
-          <span className="font-bold">Relate to Audience:</span> Craft case studies and testimonials that resonate with your target audience's needs, preferences, and aspirations, making the content relatable and compelling.
+          <span className="font-bold">Relate to Audience:</span> Craft case studies and testimonials that resonate with your target audience needs, preferences, and aspirations, making the content relatable and compelling.
         </li>
       </>
     );

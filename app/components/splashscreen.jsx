@@ -9,7 +9,7 @@ function SplashScreen() {
 
         // Define the animation timeline
 
-        tl.to('.box', { duration: 0.5, y: -400, ease: 'back.inOut' })
+        tl.to('.box', { duration: 0.5, y: -350, ease: 'back.inOut' })
           .to('.box', { duration:0.2, width:435, ease: 'sine.out'},"+=0.1") 
           .to('.box-text',{duration:0.5, opacity:1, ease: 'back.inOut'}, "<")
         
