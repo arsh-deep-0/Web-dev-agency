@@ -61,7 +61,7 @@ export default function Home() {
             <SplashScreen />
             <div>
                 <Wire />
-                <Navbar />
+                <NewNavbar scrollToPricing={scrollToPricing}/>
                 <Trustpilot />
                 <Heading />
                 <Subheading />
@@ -69,16 +69,25 @@ export default function Home() {
                 <Testimonials />
                 <Wire />
                 <ReviewsBox />
-
-
             </div>
+
             <Companies />
             <Timeline />
+
+            <div>
+           
             <Galleryheading />
+            
             <Gallery />
             <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
+            </div>
+          
             <Portfolio />
+            <div>
+            <Wire />
             <Pricing pricingRef={pricingRef} />
+            </div>
+          
             <Footer />
         </div>
 

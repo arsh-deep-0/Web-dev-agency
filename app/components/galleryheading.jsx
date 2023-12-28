@@ -1,5 +1,5 @@
 function Galleryheading(){
-    return <div className="px-4 pt-16">
+    return <div className="px-4 pt-16 z-10">
         <h2 className="aoboshi text-2xl py-2  gallery-heading-container px-4 text-center">Showcase your Projects with <span className="blue-text">Interactive Portfolio </span>sections</h2>
         <ul className="px-4 my-8 serif encodesans flex flex-col ">
             <li>A well-organized portfolio establishes your credibility and professionalism.</li>

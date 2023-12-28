@@ -10,10 +10,10 @@ import Testimonial from "./testimonial";
 import Services from "./services";
 
 
-const linestopoverProps = { name: "Sales Funnels", imgSrc: "funnel.svg", component: <Funnel /> };
-const linestopoverProps2 = { name: "Reviews & Testimonials", imgSrc: "reviewfeature.svg", component: <Testimonial /> };
-const linestopoverProps3 = { name: "Contact Forms", imgSrc: "contactforms.svg", component: <ContactForm /> };
-const linestopoverProps0 = { name: "Our Services",  component: <Services/> };
+const linestopoverProps = { name: "Sales Funnels", imgSrc: "funnel.svg", component: <Funnel /> ,order:1 };
+const linestopoverProps2 = { name: "Case Studies & Testimonials", imgSrc: "reviewfeature.svg", component: <Testimonial /> , order:2};
+const linestopoverProps3 = { name: "Lead Generation and Conversion Optimization:", imgSrc: "contactforms.svg", component: <ContactForm />, order:3 };
+const linestopoverProps0 = { name: "Our Services",  component: <Services/>, order:4 };
 function Timeline() {
 
     return <>
