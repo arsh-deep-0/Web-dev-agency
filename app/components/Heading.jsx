@@ -19,9 +19,9 @@ function Heading() {
 
         },
         opacity: 0,
-        delay:5.5,
+        delay:6,
         stagger: 0.035,
-        duration: 1,
+        duration: 1.2,
         ease: 'ease.out',
         onComplete: () => {
           text.revert()
