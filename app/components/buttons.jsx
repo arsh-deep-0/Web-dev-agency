@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { useEffect } from "react";
 
 import React, { useRef } from "react";
@@ -9,7 +9,9 @@ function Buttons({ name1, name2, scrollToPricing }) {
       <button id="plans-button" className="button crimson bg-blue-voilet" onClick={scrollToPricing}>
         {name1}
       </button>
-      <button className="button crimson bg-black flex justify-center">{name2}</button>
+      <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer" className="button crimson bg-black flex justify-center">
+        {name2} <FaExternalLinkAlt className='mt-1 ml-1'/>
+      </a>
     </div>
   );
 }

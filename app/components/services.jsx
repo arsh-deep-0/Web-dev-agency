@@ -1,5 +1,5 @@
 function Services(){
- return <div className="p-4 flex-col gap-4 flex">
+ return <div className="p-4 flex-col gap-5   flex pt-8">
  <div className="bg-white rounded-sm funnel-piece">
  <p className="blue-text text-center py-1 font-bold encodesans">Website development</p>
  </div>
