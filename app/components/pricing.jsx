@@ -1,6 +1,6 @@
-function Pricing (){
+function Pricing ({ pricingRef }){
     return <>
-    <div className="flex-col bg-white  py-8 px-2 ">
+    <div  ref={pricingRef} id='pricing' className="flex-col bg-white  py-8 px-2 ">
         <h2 className="text-center text-4xl  blue-text aoboshi h-12 underline">Pricing levels</h2>
       
         <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 mt-8">

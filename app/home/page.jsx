@@ -20,35 +20,41 @@ import Galleryheading from "../components/galleryheading";
 import BlackWire from "../components/blackwire";
 import Footer from "../components/footer";
 import SplashScreen from "../components/splashscreen";
+import NewNavbar from "../components/newnavbar";
 
 
 export default function Home() {
-
+    const pricingRef = useRef(null);
+    const scrollToPricing = () => {
+        if (pricingRef.current) {
+            pricingRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     return <>
         <div>
-        <SplashScreen/>
+            <SplashScreen />
             <div>
                 <Wire />
                 <Navbar />
                 <Trustpilot />
                 <Heading />
                 <Subheading />
-                <Buttons name1={'See Plans'} name2={"Book a call"} />
+                <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
                 <Testimonials />
                 <Wire />
                 <ReviewsBox />
-             
-                
+
+
             </div>
             <Companies />
             <Timeline />
             <Galleryheading />
             <Gallery />
-            <Buttons name1={'See Plans'} name2={"Book a call"} />
+            <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
             <Portfolio />
-            <Pricing />
-            <Footer/>
+            <Pricing pricingRef={pricingRef} />
+            <Footer />
         </div>
 
     </>
