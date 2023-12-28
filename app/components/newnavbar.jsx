@@ -124,7 +124,7 @@ function NewNavbar({scrollToPricing }) {
                     <img src="logo.svg" alt="" />
                     <h1 className='text-black bodoni text-lg font-bold lg:text-2xl'>Design<span className='blue-text'>X</span>company</h1>
                 </div>
-                <BiMenu className='flex md:hidden lg:hidden absolute right-8' id='toggle-nav' onClick={showNavbar}>
+                <BiMenu className='flex md:hidden lg:hidden absolute right-8 mb-2 w-6 h-6' id='toggle-nav' onClick={showNavbar}>
                 </BiMenu>
             </div>
 
