@@ -122,7 +122,7 @@ function NewNavbar({scrollToPricing }) {
             <div className='  flex items-center justify-between px-4 py-6 mr-0 w-full'>
                 <div className='flex gap-1'>
                     <img src="logo.svg" alt="" />
-                    <h1 className='text-black bodoni text-lg font-bold lg:text-2xl'>Design<span className='blue-text'>X</span>company</h1>
+                    <h1 className='text-black bodoni text-xl font-bold lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
                 </div>
                 <BiMenu className='flex md:hidden lg:hidden absolute right-8 mb-2 w-6 h-6' id='toggle-nav' onClick={showNavbar}>
                 </BiMenu>
@@ -161,7 +161,7 @@ function NewNavbar({scrollToPricing }) {
                     
                     <div className='flex gap-1 items-center'>
                         <img className='h-6' src="logo.svg" alt="" />
-                        <h1 className='text-black bodoni   lg:text-2xl'>Design<span className='blue-text'>X</span>company</h1>
+                        <h1 className='text-black bodoni text-center text-xl lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
                     </div>
                     <div className=" space-y-2 mt-8 flex flex-col flex-wrap justify-center items-center">
 
@@ -172,7 +172,7 @@ function NewNavbar({scrollToPricing }) {
 
 
                         <h4 className="font-medium text-blue-500 -400 text-base antics">
-                            arisedayss@gmail.com
+                            business@shinespots.agency
                         </h4>
                         {/* <h1 className="text-black  text-lg forum">
                             +1 437-998-8226 <br />+1 647-502-6701

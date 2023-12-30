@@ -27,7 +27,7 @@ function SplashScreen() {
         <div className={` splash flex flex-col items-center justify-end gap-2 ${showSplash ? '' : 'splashHidden'}`}>
             <div className='box bg-white rounded-full  w-1 h-1  flex items-center justify-center p-1 gap-2'>
                 <img className='box-text opacity-0 h-6' src="logo.svg" alt="" />
-                <p className='box-text text-center  opacity-0 text-xl bodoni'>Design<span className='blue-text'>X</span>company</p>
+                <p className='box-text text-center  opacity-0 text-xl bodoni'><span className='blue-text'>Shine</span>Spots</p>
             </div>
             <h2  className="box box-subtext text-lg life text-center opacity-0 text-white" >where design meets business</h2>
         </div>

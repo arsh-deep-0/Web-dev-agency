@@ -84,7 +84,7 @@ export default function Home() {
           
             <Portfolio />
             <div>
-            <Wire />
+            
             <Pricing pricingRef={pricingRef} />
             </div>
           

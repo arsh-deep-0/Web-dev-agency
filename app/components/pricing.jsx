@@ -1,18 +1,20 @@
 function Pricing({ pricingRef }) {
     return <>
-        <div ref={pricingRef} id='pricing' className="flex-col  py-8 px-2 ">
+        <div ref={pricingRef} id='pricing' className="flex-col  py-8 px-2 white-wire">
             <h2 className="text-center text-4xl  blue-text aoboshi h-12 underline">Pricing levels</h2>
 
-            <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 mt-8 px-2 ">
+            <div class="parent h-auto">
+            <div className="flex flex-col gap-2 md:grid md:grid-cols-3 md:gap-8 md:pb-16">
+            <div className=" flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2  px-2 md:w-full md:pt-24 md:h-full md:justify-start md:mt-12 flex-grow">
                 <p className="rose text-center text-3xl">Standard</p>
-                <p>Best for small businesses</p>
-                <p className="aoboshi text-3xl mt-4">$699</p>
-                <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer" className="button crimson bg-blue-voilet my-4 text-center">Get Started Today</a>
+                <p className="text-center">Best for small businesses</p>
+                <p className="aoboshi text-3xl mt-4">$479</p>
+                <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer" className="button crimson bg-blue-voilet my-4 text-center ">Get Started Today</a>
                 <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer">Book a call</a>
                 <hr className="border-dotted  w-24" />
                 <br />
                 <p className="my-4">Whats included</p>
-                <ul className="forum text-lg pl-10 pr-10">
+                <ul className="forum text-lg pl-10 md:pl-6">
                     <li>Fully Responsive web design</li>
                     
                     <li>Social Media Integration</li>
@@ -28,17 +30,17 @@ function Pricing({ pricingRef }) {
                 </ul>
             </div>
 
-            <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 ">
+            <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 md:w-full md:pt-24 md:h-full md:justify-start flex-grow">
                 <p className="rose text-center text-3xl">Pro</p>
-                <p>Best for small businesses</p>
-                <p className="aoboshi text-3xl mt-4">$799</p>
+                <p className="text-center">Best for small businesses</p>
+                <p className="aoboshi text-3xl mt-4">$749</p>
                 <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer" className="button crimson bg-blue-voilet my-4 text-center">Get Started Today</a>
                 <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer">Book a call</a>
 
                 <hr className="border-dotted  w-24" />
                 <br />
                 <p className="my-4">Whats included</p>
-                <ul className="forum pr-6 text-lg pl-10">
+                <ul className="forum pr-6 text-lg pl-10 md:pl-6">
                 <li>Everything in Standard plan +</li>
                 <li>Custom Built UI/UX</li>
                 <li>Keyword & On-Page Optimization</li>
@@ -49,16 +51,16 @@ function Pricing({ pricingRef }) {
                 </ul>
             </div>
 
-            <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 ">
+            <div className="flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 md:w-full md:pt-24 md:h-full md:justify-start md:mt-12 flex-grow">
                 <p className="rose text-center text-3xl">Custom</p>
-                <p>Best for small businesses</p>
+                <p className="text-center">Best for small businesses</p>
                 <p className="aoboshi text-3xl mt-4">$999</p>
                 <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer" className="button crimson bg-blue-voilet my-4 text-center">Get Started Today</a>
                 <a href="https://calendly.com/arsh0/15min" target="_blank" rel="noopener noreferrer">Book a call</a>
                 <hr className="border-dotted  w-24" />
                 <br />
                 <p className="my-4">Whats included</p>
-                <ul className="forum pr-6 pl-10 text-lg ">
+                <ul className="forum pr-6 pl-10 text-lg md:pl-6">
                     <li>Everything in Standard and Pro plans +</li>
                     <li>Unlimited Pages and scalabilty</li>
                     <li>Ecommerece Ready</li>
@@ -72,6 +74,11 @@ function Pricing({ pricingRef }) {
                     <li>24/7 Premium Support</li>
                 </ul>
             </div>
+            </div>
+            </div>
+           
+
+          
         </div>
     </>
 }
