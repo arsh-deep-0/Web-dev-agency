@@ -59,22 +59,22 @@ export default function Home() {
     return <>
         <div>
             <SplashScreen />
-            <div>
-                <Wire />
+            <div className="white-wire">
+             
                 <NewNavbar scrollToPricing={scrollToPricing}/>
                 <Trustpilot />
                 <Heading />
                 <Subheading />
                 <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
                 <Testimonials />
-                <Wire />
+                
                 <ReviewsBox />
             </div>
 
             <Companies />
             <Timeline />
 
-            <div>
+            <div className="white-wire">
            
             <Galleryheading />
             
