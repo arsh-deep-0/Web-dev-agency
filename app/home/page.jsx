@@ -1,6 +1,6 @@
 'use client'
 import { gsap } from "gsap";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import React from 'react';
 import Navbar from '../components/navbar';
 import Trustpilot from '../components/trustpilot';
@@ -21,11 +21,12 @@ import BlackWire from "../components/blackwire";
 import Footer from "../components/footer";
 import SplashScreen from "../components/splashscreen";
 import NewNavbar from "../components/newnavbar";
+import Poster from "../components/poster";
 
 
 export default function Home() {
-    const pricingRef = useRef(null);
-   
+  const pricingRef = useRef(null);
+
   const scrollToPricing = () => {
     if (pricingRef.current) {
       const targetY = pricingRef.current.getBoundingClientRect().top + window.pageYOffset;
@@ -56,41 +57,80 @@ export default function Home() {
     requestAnimationFrame(scrollStep);
   };
 
-    return <>
-        <div>
-            <SplashScreen />
-            <div className="white-wire">
-             
-                <NewNavbar scrollToPricing={scrollToPricing}/>
-                <Trustpilot />
-                <Heading />
-                <Subheading />
+  const [isMobile, setIsMobile] = useState(false);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    handleResize(); // Call it initially
+    window.addEventListener('resize', handleResize); // Listen for window resize events
+
+
+    return () => {
+      window.removeEventListener('resize', handleResize); // Clean up the listener on unmount
+    };
+  }, []);
+
+
+  return <>
+    <div>
+      <SplashScreen />
+      <div className="white-wire">
+
+        <NewNavbar scrollToPricing={scrollToPricing} />
+        <Trustpilot />
+        <Heading />
+        <Subheading />
+        <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
+        {
+          !isMobile && <>
+            <Poster />
+          </>
+        }
+
+        <Testimonials />
+
+        <ReviewsBox />
+      </div>
+
+      <Companies />
+      <Timeline />
+
+      <div className="white-wire">
+        {isMobile && <>
+          <Galleryheading />
+          <Gallery />
+          <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
+        </>}
+
+        {
+          !isMobile && <>
+            <div className="flex pt-32 pb-24 justify-between px-8">
+              <div className="w-1/2 lex items-center" >
+                <Gallery />
+              </div>
+              <div className="flex flex-col w-2/5 ">
+                <Galleryheading />
                 <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
-                <Testimonials />
-                
-                <ReviewsBox />
+              </div>
             </div>
+          </>
+        }
 
-            <Companies />
-            <Timeline />
+      </div>
 
-            <div className="white-wire">
-           
-            <Galleryheading />
-            
-            <Gallery />
-            <Buttons name1={'See Plans'} name2={"Book a call"} scrollToPricing={scrollToPricing} />
-            </div>
-          
-            <Portfolio />
-            <div>
-            
-            <Pricing pricingRef={pricingRef} />
-            </div>
-          
-            <Footer />
-        </div>
+      <Portfolio />
+      <div>
 
-    </>
+        <Pricing pricingRef={pricingRef} />
+      </div>
+
+      <Footer />
+    </div>
+
+  </>
 }
 

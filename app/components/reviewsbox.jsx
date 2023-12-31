@@ -60,32 +60,35 @@ function ReviewsBox() {
                     });
                 },
             });
-        }, 4500);
+        }, 5000);
 
         return () => {
             window.removeEventListener('resize', handleResize);
             clearInterval(interval);
         };
     }, [index, photos, reviews, clients, businesses, roles]);
-    return <div className="flex justify-center">
-        <div className="  flex relative justify-center h-64 pl-4  w-m md:w-t lg:w-lg  ">
-            <div className="z-10 relative flex flex-col gap-2 items-center justify-between w-m md:w-t lg:w-lg">
-                <div className="flex justify-center h-12 w-full mt-14">
-                <p className="review   review-text w-4/6  text-center  text-sm crimson">{reviewText}</p>
+    return <div className="flex justify-center pb-8">
+        <div className="  flex relative justify-center  pl-4  w-m md:w-t lg:w-lg lg:mt-0  ">
+            <div className="z-10 relative flex flex-col gap-0 items-center justify-between w-m md:w-t lg:w-lg">
+                <div className="flex justify-center h-12 w-full mt-14 md:mt-36 lg:mt-28">
+                <p className="review   review-text w-2/3  text-center  text-sm crimson md:w-1/2 lg:text-base">{reviewText}</p>
                 </div>
-                <div className="flex justify-end gap-1 items-end w-full mb-8 mr-2 pr-10">
-                <div className="review  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet">
+                <div className="flex justify-end gap-1 items-end w-full mb-8 mr-2 pr-10 md:mb-20 md:justify-between md:pr-16 lg:pr-32 lg:pl-20 lg:mb-8  ">
+                    <div className="flex items-end gap-2">
+                    <div className="review  flex items-center justify-center bg-white rounded-full h-16 w-16 review-photo bg-blue-voilet ">
                     <img className="w-full" src={imageSrc} alt="" />
                 </div>
-                <p className="review client-name w-32 text-sm  crimson ">{clientName} <br /><span className="client-role encodesans text-xs " >{clientRole}</span></p>
-                <p className="review client-business  text-xs w-24   ebgara blue-text">{clientBusiness}</p>
+                <p className="review client-name w-32 text-sm  crimson  md:w-44">{clientName} <br /><span className="client-role encodesans text-xs " >{clientRole}</span></p>
+                    </div>
+              
+                <p className="review client-business  text-xs w-24   ebgara blue-text  md:w-36">{clientBusiness}</p>
                 </div>
 
                 </div>
 
                 <div className="absolute w-96p items-center flex justify-center">
                 {largeScreen ? (
-                    <img className="w-m md:w-t lg:w-lg " src="review-box-lg.svg" alt="trustpilot reviews ratings" />
+                    <img className="w-m md:w-t lg:w-lg " src="review-box-icons-lg.svg" alt="trustpilot reviews ratings" />
                 ) : (
                     <img className="w-m md:w-t lg:w-lg" src="reviews-box.svg" alt="trustpilot reviews ratings" />
                 )}

@@ -16,7 +16,7 @@ import Wire from './wire';
 
 
 
-function NewNavbar({scrollToPricing }) {
+function NewNavbar({ scrollToPricing }) {
 
 
     const [navbarVisible, setNavbarVisible] = useState(false);
@@ -93,6 +93,7 @@ function NewNavbar({scrollToPricing }) {
         console.log('clicked');
     };
 
+    const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
         gsap.from('.navbar', {
             delay: 0.25,
@@ -115,6 +116,18 @@ function NewNavbar({scrollToPricing }) {
 
         })
 
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+        };
+
+        handleResize(); // Call it initially
+        window.addEventListener('resize', handleResize); // Listen for window resize events
+
+
+        return () => {
+            window.removeEventListener('resize', handleResize); // Clean up the listener on unmount
+        };
+
     }, []); // Empty dependency array ensures it runs once when the component mounts
 
     return (
@@ -124,8 +137,14 @@ function NewNavbar({scrollToPricing }) {
                     <img src="logo.svg" alt="" />
                     <h1 className='text-black bodoni text-xl font-bold lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
                 </div>
-                <BiMenu className='flex md:hidden lg:hidden absolute right-8 mb-2 w-6 h-6' id='toggle-nav' onClick={showNavbar}>
+                <div className='gap-12 hidden lg:flex mr-12'>
+                    <p className='gotu'>Portfoilio</p>
+                    <p className='gotu'>Pricing</p>
+                    <p className='gotu'>Contact us</p>
+                </div>
+                <BiMenu className='flex md:hidden lg:hidden absolute right-8 mb-0 w-6 h-6' id='toggle-nav' onClick={showNavbar}>
                 </BiMenu>
+
             </div>
 
 
@@ -133,17 +152,17 @@ function NewNavbar({scrollToPricing }) {
             {navbarVisible && <div className="navbar-modal-2  opacity-0  text-center md:flex-row md:items-center md:justify-between  md:space-y-0  ">
 
                 <div className='navbar-modal-2-div-1 min-h-full bg-blue-voilet px-5 w-1/2'>
-              
+
                     <ImCross className='cross  ' id='cross' onClick={hideNavbar}></ImCross>
                     <nav className=" flex flex-col items-center justify-center text-white lg:space-y-0 lg:flex-row lg:items-center lg:justify-center lg:space-x-3 md:flex-row md:space-x-6 sm:flex-col sm:space-y-8">
 
 
-                        <a  className={`hoverable text-sm    dark:-400 `}>
+                        <a className={`hoverable text-sm    dark:-400 `}>
                             <span className='new-nav font-frank text-xl'>Portfolio</span>
                         </a>
 
-                        <a  className={`hoverable text-sm    dark:-400 `}>
-                            <span className='new-nav font-frank text-xl'  onClick={scrollToPricing}>Pricing</span>
+                        <a className={`hoverable text-sm    dark:-400 `}>
+                            <span className='new-nav font-frank text-xl' onClick={scrollToPricing}>Pricing</span>
                         </a>
 
                         <a className={` text-sm    dark:-400 `}>
@@ -153,12 +172,12 @@ function NewNavbar({scrollToPricing }) {
 
 
                     </nav>
-                   
+
 
                 </div>
-              
+
                 <div className='navbar-modal-2-div-2 py-8 px-2 bg-white flex-grow' >
-                    
+
                     <div className='flex gap-1 items-center'>
                         <img className='h-6' src="logo.svg" alt="" />
                         <h1 className='text-black bodoni text-center text-xl lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
@@ -180,11 +199,11 @@ function NewNavbar({scrollToPricing }) {
                         <h4 className="text-black  text-sm forum">
                             857 Fenmar Drive , North York<br />Toronto Ontario, M9L1C8
                         </h4>
-                      
+
                     </div>
-                 
+
                 </div>
-             
+
             </div>}
         </>
     )

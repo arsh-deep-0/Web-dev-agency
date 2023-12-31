@@ -1,7 +1,7 @@
 function Pricing({ pricingRef }) {
     return <>
         <div ref={pricingRef} id='pricing' className="flex-col  py-8 px-2 white-wire">
-            <h2 className="text-center text-4xl  blue-text aoboshi h-12 underline">Pricing levels</h2>
+            <h2 className="text-center text-4xl  blue-text aoboshi h-12 underline lg:my-12">Pricing levels</h2>
 
             <div class="parent h-auto">
             <div className="flex flex-col gap-2 md:grid md:grid-cols-3 md:gap-8 md:pb-16">

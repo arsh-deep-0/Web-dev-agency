@@ -15,7 +15,7 @@ function SplashScreen() {
           .to('.box-text',{duration:0.5, opacity:1, ease: 'back.inOut'}, "<")
         
           .to('.box-subtext',{duration:1.8, opacity:1, ease: 'ease.out'}, "+=0.5")
-          .to('.splash', { opacity: 0, duration: 0.2, onComplete: () => { setShowSplash(false); } }, "+=2");
+          .to('.splash', { opacity: 0, duration: 0.2, onComplete: () => { setShowSplash(false); } }, "+=1");
           
 
         return () => {

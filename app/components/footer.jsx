@@ -1,6 +1,6 @@
 function Footer() {
     return <>
-        <div className="bg-black pt-8 pb-2 px-4  text-white ">
+        <div className="bg-black pt-8 pb-2 px-4  text-white lg:px-72 lg:pt-16">
             <h2 className="encodesans text-2xl text-center font-bold">Lets Scale up your Business <span className="blue-text font-extrabold"> with Designjoy</span></h2>
 
             <div className='flex flex-col gap-1 justify-center my-8 mb-12'>

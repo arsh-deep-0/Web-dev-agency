@@ -42,6 +42,9 @@ body {
   font-family: 'Abril Fatface', serif;
 }
 
+.gotu{
+  font-family: 'Gotu', sans-serif;
+}
 .life{
   font-family: 'Life Savers', serif;
 }
@@ -101,8 +104,7 @@ body {
 
 .button {
   border: 0.25px white solid;
-  padding: 6px;
-  width: 10rem;
+padding: 6px;
   border-radius: 0.3rem;
   color: white;
   box-shadow: 4px 4px 2px rgba(180, 180, 180, 0.75);
@@ -154,7 +156,14 @@ body {
   transform: translateY(1rem) translateX(-4rem);
 }
 
-.steps-outer {
+
+.steps{
+  margin-bottom: 0.5rem;
+  transform: translateY(1rem) translateX(-4rem);
+  
+}
+
+.steps-outers {
   margin-left: 35%;
   position: absolute;
 }
@@ -248,17 +257,28 @@ ul.feature li {
 
 .gradientblue{
   background: linear-gradient(32deg , #0095ff, #9e00ff99);
-  width: 95%;
+  
   box-shadow: 0px 2px 4px rgb(255, 255, 255,0.34);
 }
 
-.black-wire{
+.w-95{
+  width: 95%;
+}
+
+@layer utilities{.black-wire{
   background: url('/black-wire.svg');
   background-position: center;
   background-repeat: repeat-y;
 
 }
 
+.black-wire-lg{
+  background: url('/black-wire-lg.svg');
+  background-position: center;
+  background-repeat: repeat-y;
+
+}
+}
 .white-wire{
   background: url('/white-wire.svg');
   background-position: center;
@@ -280,7 +300,7 @@ ul.feature li {
   /* margin-top: -3%;
   margin-left: 20%; */
   height: 5rem;
-  width: 75%;
+  
 }
 
 .review-photo{
@@ -345,14 +365,17 @@ width: 96%;
   color:transparent; */
   color:#6600ff;
 }
+@layer utilities{
+
 .blue-text{
-  color: linear-gradient(143deg,);
+  
   background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
   -webkit-background-clip: text;
   background-clip:text ;
   -webkit-text-fill-color: transparent;
   color:transparent; 
   
+}
 }
 
 
@@ -384,4 +407,24 @@ width: 96%;
 .splashHidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.feature-h{
+  height: 72rem;
+}
+
+
+.feature-h-lg{
+  height: 32rem;
+}
+.feature-h-lgg{
+  height: 39.5rem;
+}
+
+.w-main{
+  width: 69%;
+}
+
+.w-desc{
+  width: 31%;
 }

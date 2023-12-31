@@ -44,34 +44,34 @@ function Gallery() {
     },[]);
 
     return <div className="justify-center  flex w-full overflow-hidden ">
-        <div className="flex gallery-container items-center justify-center overflow-hidden z-50">
-            <div>
-                <img className="kitchen" src="side handle.svg" alt="" />
+        <div className="flex gallery-container items-center justify-center overflow-hidden ">
+            <div className="w-1/12 ">
+                <img className="kitchen  ml-2 lg:h-96" src="side handle.svg" alt="" />
             </div>
-            <div className="flex flex-col ">
-                <div className="flex ">
-                    <img className="kitchen" src="Heading-gallery.svg" alt="" />
+            <div className="flex flex-col w-11/12">
+                <div className="flex  ">
+                    <img className="kitchen h-12 lg:ml-4 lg:h-16" src="Heading-gallery.svg" alt="" />
                 </div>
                 <div className=" flex ">
-                    <div>
-                        <img className="kitchen" src="main-kitchen.svg" alt="" />
+                    <div className="w-main">
+                        <img className="kitchen w-full" src="main-kitchen.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="gallery-description.svg" alt="" />
+                    <div className=" w-desc ">
+                        <img className="kitchen w-full" src="gallery-description.svg" alt="" />
                     </div>
                 </div>
-                <div className="kitchen-container flex ">
-                    <div>
-                        <img className="kitchen" src="kitchen-1.svg" alt="" />
+                <div className="kitchen-container flex w-full">
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-1.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="kitchen-2.svg" alt="" />
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-2.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="kitchen-3.svg" alt="" />
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-3.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="kitchen-4.svg" alt="" />
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-4.svg" alt="" />
                     </div>
                 </div>
 
