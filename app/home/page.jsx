@@ -26,10 +26,24 @@ import Poster from "../components/poster";
 
 export default function Home() {
   const pricingRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const contactRef = useRef(null);
 
   const scrollToPricing = () => {
     if (pricingRef.current) {
       const targetY = pricingRef.current.getBoundingClientRect().top + window.pageYOffset;
+      slowScrollTo(targetY);
+    }
+  };
+  const scrollToPortfolio = () => {
+    if (portfolioRef.current) {
+      const targetY = portfolioRef.current.getBoundingClientRect().top + window.pageYOffset;
+      slowScrollTo(targetY);
+    }
+  };
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      const targetY = contactRef.current.getBoundingClientRect().top + window.pageYOffset;
       slowScrollTo(targetY);
     }
   };
@@ -80,7 +94,7 @@ export default function Home() {
       <SplashScreen />
       <div className="white-wire">
 
-        <NewNavbar scrollToPricing={scrollToPricing} />
+        <NewNavbar scrollToPricing={scrollToPricing} scrollToPortfolio={scrollToPortfolio} scrollToContact={scrollToContact}/>
         <Trustpilot />
         <Heading />
         <Subheading />
@@ -122,13 +136,13 @@ export default function Home() {
 
       </div>
 
-      <Portfolio />
+      <Portfolio portfolioRef={portfolioRef} />
       <div>
 
         <Pricing pricingRef={pricingRef} />
       </div>
 
-      <Footer />
+      <Footer contactRef={contactRef} />
     </div>
 
   </>

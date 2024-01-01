@@ -16,7 +16,7 @@ import Wire from './wire';
 
 
 
-function NewNavbar({ scrollToPricing }) {
+function NewNavbar({ scrollToPricing , scrollToPortfolio, scrollToContact}) {
 
 
     const [navbarVisible, setNavbarVisible] = useState(false);
@@ -92,6 +92,27 @@ function NewNavbar({ scrollToPricing }) {
 
         console.log('clicked');
     };
+     // Function to hide Navbar and scroll to Portfolio section
+     const hideNavbarandscrollToPortfolio = () => {
+        hideNavbar(); // First, hide the Navbar
+        scrollToPortfolio(); // Then, scroll to the Portfolio section
+    };
+
+    // Function to hide Navbar and scroll to Pricing section
+    const hideNavbarandscrollToPricing = () => {
+        hideNavbar(); // First, hide the Navbar
+        scrollToPricing(); // Then, scroll to the Pricing section
+    };
+
+    // Function to hide Navbar and scroll to Contact section
+    const hideNavbarandscrollToContact = () => {
+        hideNavbar(); // First, hide the Navbar
+        scrollToContact(); // Then, scroll to the Contact section
+    };
+
+    const bookmeet = () => {
+        window.open("https://calendly.com/arsh0/15min", "_blank");
+      };
 
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
@@ -138,9 +159,9 @@ function NewNavbar({ scrollToPricing }) {
                     <h1 className='text-black bodoni text-xl font-bold lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
                 </div>
                 <div className='gap-12 hidden lg:flex mr-12'>
-                    <p className='gotu'>Portfoilio</p>
-                    <p className='gotu'>Pricing</p>
-                    <p className='gotu'>Contact us</p>
+                    <p className='gotu'onClick={scrollToPortfolio}>Portfoilio</p>
+                    <p className='gotu'onClick={scrollToPricing}>Pricing</p>
+                    <p className='gotu'onClick={scrollToContact}>Contact us</p>
                 </div>
                 <BiMenu className='flex md:hidden lg:hidden absolute right-8 mb-0 w-6 h-6' id='toggle-nav' onClick={showNavbar}>
                 </BiMenu>
@@ -158,15 +179,15 @@ function NewNavbar({ scrollToPricing }) {
 
 
                         <a className={`hoverable text-sm    dark:-400 `}>
-                            <span className='new-nav font-frank text-xl'>Portfolio</span>
+                            <span className='new-nav font-frank text-xl'onClick={hideNavbarandscrollToPortfolio}>Portfolio</span>
                         </a>
 
                         <a className={`hoverable text-sm    dark:-400 `}>
-                            <span className='new-nav font-frank text-xl' onClick={scrollToPricing}>Pricing</span>
+                            <span className='new-nav font-frank text-xl' onClick={hideNavbarandscrollToPricing}>Pricing</span>
                         </a>
 
                         <a className={` text-sm    dark:-400 `}>
-                            <span className='new-nav font-frank text-xl'>Contact Us</span>
+                            <span className='new-nav font-frank text-xl'onClick={hideNavbarandscrollToContact}>Contact Us</span>
                         </a>
 
 
@@ -178,26 +199,34 @@ function NewNavbar({ scrollToPricing }) {
 
                 <div className='navbar-modal-2-div-2 py-8 px-2 bg-white flex-grow' >
 
-                    <div className='flex gap-1 items-center'>
+                    <div className='flex gap-1 items-center justify-center'>
                         <img className='h-6' src="logo.svg" alt="" />
-                        <h1 className='text-black bodoni text-center text-xl lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
+                        <h1 className='text-black bodoni text-center text-xl lg:text-2xl '><span className='blue-text'>Shine</span>Spots</h1>
                     </div>
-                    <div className=" space-y-2 mt-8 flex flex-col flex-wrap justify-center items-center">
+                    <div className=" space-y-2 mt-0 gap-8 flex flex-col flex-wrap justify-center items-center">
 
 
-                        <h1 className="text-black font-semibold text-base life">
-                            when Design meets Business
+                        <h1 className="text-black  font-semibold text-base life">
+                        lets make your Housing Business shine
                         </h1>
 
 
-                        <h4 className="font-medium text-blue-500 -400 text-base antics">
+                        <h4 className="font-medium  text-blue-500 -400 text-base antics">
+                            <span className='text-black'>Contact Us</span>
+                            <br />
                             business@shinespots.agency
                         </h4>
+
+                        <div className='p-2 px-6 bg-blue-voilet rounded-md' onClick={bookmeet}>
+                            <p className='text-white crimson text-lg'>Book appointment</p>
+                        </div>
+
+                        
                         {/* <h1 className="text-black  text-lg forum">
                             +1 437-998-8226 <br />+1 647-502-6701
                         </h1> */}
                         <h4 className="text-black  text-sm forum">
-                            857 Fenmar Drive , North York<br />Toronto Ontario, M9L1C8
+                         
                         </h4>
 
                     </div>

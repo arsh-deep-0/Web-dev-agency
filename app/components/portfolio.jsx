@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-function Portfolio() {
+function Portfolio({portfolioRef}) {
   const Homez = () => {
     window.open("https://homez-wbs.webflow.io/", "_blank");
   };
@@ -10,7 +10,7 @@ function Portfolio() {
   };
 
   return (
-    <div className="py-8 px-2 overflow-hidden black-wire lg:black-wire-lg">
+    <div ref={portfolioRef} className="py-8 px-2 overflow-hidden black-wire lg:black-wire-lg">
       <h2 className="text-white text-center text-3xl aoboshi blue-text lg:text-5xl lg:py-4 ">Recent Work</h2>
       <div className="flex items-center justify-center text-white">
         <div className="flex-col items-center flex py-8 gap-0 lg:flex-row lg:w-full">

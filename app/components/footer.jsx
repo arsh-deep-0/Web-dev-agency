@@ -1,14 +1,14 @@
-function Footer() {
+function Footer({contactRef}) {
     return <>
-        <div className="bg-black pt-8 pb-2 px-4  text-white lg:px-72 lg:pt-16">
-            <h2 className="encodesans text-2xl text-center font-bold">Lets Scale up your Business <span className="blue-text font-extrabold"> with Designjoy</span></h2>
+        <div ref={contactRef} className="bg-black pt-8 pb-2 px-4  text-white lg:px-72 lg:pt-16">
+            <h2 className="encodesans text-2xl text-center font-bold">Crafting Tech Brilliance for <span className="blue-text font-extrabold">Housing</span> Experts </h2>
 
             <div className='flex flex-col gap-1 justify-center my-8 mb-12'>
             <div className="flex gap-2 justify-center mt-4 items-center">
                     <img src="logo.svg" alt="" />
                     <h1 className='bodoni text-2xl text-center lg:text-3xl'><span className='blue-text'>Shine</span>Spots</h1>
                 </div>
-                <h2  className="text-lg life text-center" >where design meets business</h2>
+                <h2  className="text-lg life text-center" >lets make your Housing Business shine</h2>
              
               
             </div>
