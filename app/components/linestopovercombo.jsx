@@ -49,6 +49,7 @@ function Linestopover(props) {
 
             gsap.to('.tlfeature', {
                 opacity: 1,
+               
                 scrollTrigger: {
                     trigger: ".heads",
                     start: "top center-=30",

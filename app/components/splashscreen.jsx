@@ -29,7 +29,7 @@ function SplashScreen() {
                 <img className='box-text opacity-0 h-6' src="logo.svg" alt="" />
                 <p className='box-text text-center  opacity-0 text-xl bodoni'><span className='blue-text'>Shine</span>Spots</p>
             </div>
-            <h2  className="box box-subtext text-lg life text-center opacity-0 text-white" > Brightening 
+            <h2  className="box box-subtext text-lg jose text-center opacity-0 text-white" > Brightening 
  Housing  Enterprises </h2>
         </div>
     );

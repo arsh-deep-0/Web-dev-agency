@@ -8,7 +8,7 @@ function Footer({contactRef}) {
                     <img src="logo.svg" alt="" />
                     <h1 className='bodoni text-2xl text-center lg:text-3xl'><span className='blue-text'>Shine</span>Spots</h1>
                 </div>
-                <h2  className="text-lg life text-center" > Brightening 
+                <h2  className="text-lg jose text-center" > Brightening 
  Housing  Enterprises</h2>
              
               

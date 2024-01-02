@@ -1,5 +1,6 @@
 'use client'
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import React from 'react';
 import Navbar from '../components/navbar';
@@ -22,9 +23,13 @@ import Footer from "../components/footer";
 import SplashScreen from "../components/splashscreen";
 import NewNavbar from "../components/newnavbar";
 import Poster from "../components/poster";
+import Poster2 from "../components/poster2";
 
 
 export default function Home() {
+  gsap.registerPlugin(ScrollTrigger);
+  const appt = useRef(null);
+
   const pricingRef = useRef(null);
   const portfolioRef = useRef(null);
   const contactRef = useRef(null);
@@ -88,9 +93,106 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(()=>{
+    let ctx = gsap.context(()=>{
+      gsap.from(".ani", {
+        y:30,
+        opacity:0,
+        duration: 0.5,
+        ease:'sine.out',
+        stagger:0.35,
+        scrollTrigger: {
+            trigger: ".ani",
+            start: "top 80%",
+            toggleActions: "restart none restart none ",
+        }
+    }
+    );
+
+    gsap.from(".ani-p", {
+      y:30,
+      opacity:0,
+      duration: 0.5,
+      ease:'sine.out',
+      stagger:0.35,
+      scrollTrigger: {
+          trigger: ".ani-p",
+          start: "top 70%",
+          toggleActions: "restart none restart none ",
+      }
+  }
+  );
+
+  
+  gsap.from(".ani-t", {
+    y:25,
+    opacity:0,
+    duration: 0.8,
+    ease:'back.out',
+    stagger:0.35,
+    scrollTrigger: {
+        trigger: ".ani-t",
+        start: "top 70%",
+        toggleActions: "restart none restart none ",
+    }
+}
+);
+gsap.from(".ani-t1", {
+  y:25,
+  opacity:0,
+  duration: 0.8,
+  ease:'back.out',
+  stagger:0.35,
+  scrollTrigger: {
+      trigger: ".ani-t1",
+      start: "top 70%",
+      toggleActions: "restart none restart none ",
+  }
+}
+);
+gsap.from(".ani-t2", {
+  y:25,
+  opacity:0,
+  duration: 0.8,
+  ease:'back.out',
+  stagger:0.35,
+  scrollTrigger: {
+      trigger: ".ani-t2",
+      start: "top 70%",
+      toggleActions: "restart none restart none ",
+  }
+}
+);
+
+  gsap.from(".ani-g", {
+    y:30,
+    opacity:0,
+    duration: 0.5,
+    ease:'back.out',
+    stagger:0.35,
+    scrollTrigger: {
+        trigger: ".ani-g",
+        start: "top 70%",
+        toggleActions: "restart reverse restart reverse ",
+    }
+}
+);
+gsap.from(".start",{
+  y:30,
+  opacity:0,
+  duration:0.75,
+  ease:'sineout',
+  stagger:0.1,
+  delay:5.15
+})
+    },appt)
+
+    return () => ctx.revert();
+  },[]);
+
 
   return <>
-    <div>
+    <div ref={appt} >
       <SplashScreen />
       <div className="white-wire">
 
@@ -102,6 +204,7 @@ export default function Home() {
         {
           !isMobile && <>
             <Poster />
+            <Poster2/>
           </>
         }
 

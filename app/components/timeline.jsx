@@ -41,7 +41,7 @@ function Timeline() {
     <div className="px-2 py-16 black-wire lg:black-wire-lg">
 
 <div className="">
-    <h2 className="text-white text-4xl  text-center aoboshi py-8 " >Lets look at <br /> <span className="text-5xl blue-text ">What we Offer </span></h2>
+    <h2 className="ani-t text-white text-4xl  text-center aoboshi py-8 " >Lets look at <br /> <span className="text-5xl blue-text ">What we Offer </span></h2>
     <h3 className="text-white text-xl text-center pt-4 crimson shadow">Our Features</h3>
 </div>
 

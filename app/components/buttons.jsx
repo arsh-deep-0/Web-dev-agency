@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 
 function Buttons({ name1, name2, scrollToPricing }) {
   return (
-    <div className="flex justify-center gap-4 py-8 my-2 lg:gap-16 lg:py-821">
+    <div className="start flex justify-center gap-4 py-8 my-2 lg:gap-16 lg:py-821">
       <button id="plans-button" className="button w-40 lg:w-44 text-lg crimson bg-blue-voilet" onClick={scrollToPricing}>
         {name1}
       </button>

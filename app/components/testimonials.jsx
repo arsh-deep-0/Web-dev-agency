@@ -1,6 +1,6 @@
 function Testimonials (){
     return <>
-    <div className=" flex justify-center pt-4 lg:p-0">
+    <div className="start flex justify-center pt-4 lg:p-0">
     <img src="testimonial-people.svg" alt="trustpilot reviews ratings" />
     </div>
    

@@ -63,7 +63,7 @@ function Heading() {
 
   return (
     <>
-      <div className=' z-10 relative flex justify-center  items-center py-6 lg:py-2 lg:pt-8 lg:pb-4 '>
+      <div className='start z-10 relative flex justify-center  items-center py-6 lg:py-2 lg:pt-8 lg:pb-4 '>
         <p id='target' className=' leading-normal target px-2 aoboshi heading text-3xl text-center font-normal md:text-5xl md:leading-tight lg:text-6xl lg:leading-normal  lg:w-3/4 '>
           <span className='text-reveal target' >A complete Tech solution to all </span>
           <span className='text-reveal bluee-text pr-2 target'>Home Remodeling & Construction </span>

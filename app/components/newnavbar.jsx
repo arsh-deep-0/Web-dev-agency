@@ -153,7 +153,7 @@ function NewNavbar({ scrollToPricing , scrollToPortfolio, scrollToContact}) {
 
     return (
         <>
-            <div className='  flex items-center justify-between px-4 py-6 mr-0 w-full'>
+            <div className='start  flex items-center justify-between px-4 py-6 mr-0 w-full'>
                 <div className='flex gap-1 items-center'>
                     <img src="logo.svg" alt="" />
                     <h1 className='text-black bodoni text-xl font-bold lg:text-2xl'><span className='blue-text'>Shine</span>Spots</h1>
@@ -206,7 +206,7 @@ function NewNavbar({ scrollToPricing , scrollToPortfolio, scrollToContact}) {
                     <div className=" space-y-2 mt-0 gap-8 flex flex-col flex-wrap justify-center items-center">
 
 
-                        <h1 className="text-black  font-semibold text-base life">
+                        <h1 className="text-black  font-semibold text-base jose">
                          Brightening 
  Housing  Enterprises
                         </h1>

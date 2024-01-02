@@ -67,7 +67,7 @@ function ReviewsBox() {
             clearInterval(interval);
         };
     }, [index, photos, reviews, clients, businesses, roles]);
-    return <div className="flex justify-center pb-8">
+    return <div className="start flex justify-center pb-8">
         <div className="  flex relative justify-center  pl-4  w-m md:w-t lg:w-lg lg:mt-0  ">
             <div className="z-10 relative flex flex-col gap-0 items-center justify-between w-m md:w-t lg:w-lg">
                 <div className="flex justify-center h-12 w-full mt-14 md:mt-36 lg:mt-28">
