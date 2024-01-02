@@ -37,19 +37,19 @@ export default function Home() {
   const scrollToPricing = () => {
     if (pricingRef.current) {
       const targetY = pricingRef.current.getBoundingClientRect().top + window.pageYOffset;
-      slowScrollTo(targetY);
+      slowScrollto(targetY);
     }
   };
   const scrollToPortfolio = () => {
     if (portfolioRef.current) {
       const targetY = portfolioRef.current.getBoundingClientRect().top + window.pageYOffset;
-      slowScrollTo(targetY);
+      slowScrollto(targetY);
     }
   };
   const scrollToContact = () => {
     if (contactRef.current) {
       const targetY = contactRef.current.getBoundingClientRect().top + window.pageYOffset;
-      slowScrollTo(targetY);
+      slowScrollto(targetY);
     }
   };
 
@@ -66,7 +66,7 @@ export default function Home() {
       const percentage = Math.min(time / duration, 1);
       const easedPercentage = easeOutQuad(percentage);
 
-      window.scrollTo(0, initialY + diff * easedPercentage);
+      window.scrollto(0, initialY + diff * easedPercentage);
 
       if (time < duration) {
         requestAnimationFrame(scrollStep);
@@ -95,7 +95,7 @@ export default function Home() {
 
   useEffect(()=>{
     let ctx = gsap.context(()=>{
-      gsap.To(".ani", {
+      gsap.to(".ani", {
         y:-30,
         opacity:1,
         duration: 0.5,
@@ -109,7 +109,7 @@ export default function Home() {
     }
     );
 
-    gsap.To(".ani-p", {
+    gsap.to(".ani-p", {
       y:-30,
       opacity:1,
       duration: 0.5,
@@ -124,7 +124,7 @@ export default function Home() {
   );
 
   
-  gsap.To(".ani-t", {
+  gsap.to(".ani-t", {
     y:-25,
     opacity:1,
     duration: 0.8,
@@ -137,8 +137,8 @@ export default function Home() {
     }
 }
 );
-gsap.To(".ani-t1", {
-  y:-25,
+gsap.to(".ani-t1", {
+  
   opacity:1,
   duration: 0.8,
   ease:'back.out',
@@ -150,9 +150,9 @@ gsap.To(".ani-t1", {
   }
 }
 );
-gsap.To(".ani-t2", {
-  y:-25,
-  opacity:0,
+gsap.to(".ani-t2", {
+ 
+  opacity:1,
   duration: 0.8,
   ease:'back.out',
   stagger:0.35,
@@ -164,7 +164,7 @@ gsap.To(".ani-t2", {
 }
 );
 
-  gsap.To(".ani-g", {
+  gsap.to(".ani-g", {
     y:-30,
     opacity:1,
     duration: 0.5,
