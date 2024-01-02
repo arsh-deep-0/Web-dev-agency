@@ -53,7 +53,7 @@ export default function Home() {
     }
   };
 
-  const slowScrollTo = (targetY, duration = 2000) => {
+  const slowScrollto = (targetY, duration = 2000) => {
     const initialY = window.pageYOffset;
     const diff = targetY - initialY;
     let start;
