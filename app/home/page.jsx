@@ -104,7 +104,7 @@ export default function Home() {
         scrollTrigger: {
             trigger: ".ani",
             start: "top 80%",
-            toggleActions: "restart none none none ",
+            toggleActions: "play none none none ",
         }
     }
     );
@@ -118,7 +118,7 @@ export default function Home() {
       scrollTrigger: {
           trigger: ".ani-p",
           start: "top 70%",
-          toggleActions: "restart none none none ",
+          toggleActions: "play none none none ",
       }
   }
   );
@@ -133,23 +133,11 @@ export default function Home() {
     scrollTrigger: {
         trigger: ".ani-t",
         start: "top 70%",
-        toggleActions: "restart none none none ",
+        toggleActions: "play none none none ",
     }
 }
 );
-gsap.to(".ani-t1", {
-  
-  opacity:1,
-  duration: 0.8,
-  ease:'back.out',
-  stagger:0.35,
-  scrollTrigger: {
-      trigger: ".ani-t1",
-      start: "top 70%",
-      toggleActions: "restart none none none ",
-  }
-}
-);
+
 gsap.to(".ani-t2", {
  
   opacity:1,
@@ -159,7 +147,7 @@ gsap.to(".ani-t2", {
   scrollTrigger: {
       trigger: ".ani-t2",
       start: "top 70%",
-      toggleActions: "restart none none none ",
+      toggleActions: "play none none none ",
   }
 }
 );
@@ -173,7 +161,7 @@ gsap.to(".ani-t2", {
     scrollTrigger: {
         trigger: ".ani-g",
         start: "top 70%",
-        toggleActions: "restart reverse restart reverse ",
+        toggleActions: "play reverse play reverse ",
     }
 }
 );

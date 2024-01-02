@@ -11,7 +11,7 @@ function Portfolio({portfolioRef}) {
 
   return (
     <div ref={portfolioRef} className="py-8 px-2 overflow-hidden black-wire lg:black-wire-lg ">
-      <h2 className="text-white text-center text-3xl aoboshi  lg:text-5xl lg:py-4 ani-t1 opacity-0">Recent Work</h2>
+      <h2 className="text-white text-center text-3xl aoboshi  lg:text-5xl lg:py-4 ani-p opacity-0">Recent Work</h2>
       <div className="flex items-center justify-center text-white">
         <div className="flex-col items-center flex py-8 gap-0 lg:flex-row lg:w-full">
           <div className="lg:w-1/2 ani-p opacity-0">
