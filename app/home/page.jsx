@@ -95,9 +95,9 @@ export default function Home() {
 
   useEffect(()=>{
     let ctx = gsap.context(()=>{
-      gsap.from(".ani", {
-        y:30,
-        opacity:0,
+      gsap.To(".ani", {
+        y:-30,
+        opacity:1,
         duration: 0.5,
         ease:'sine.out',
         stagger:0.35,
@@ -109,9 +109,9 @@ export default function Home() {
     }
     );
 
-    gsap.from(".ani-p", {
-      y:30,
-      opacity:0,
+    gsap.To(".ani-p", {
+      y:-30,
+      opacity:1,
       duration: 0.5,
       ease:'sine.out',
       stagger:0.35,
@@ -124,9 +124,9 @@ export default function Home() {
   );
 
   
-  gsap.from(".ani-t", {
-    y:25,
-    opacity:0,
+  gsap.To(".ani-t", {
+    y:-25,
+    opacity:1,
     duration: 0.8,
     ease:'back.out',
     stagger:0.35,
@@ -137,9 +137,9 @@ export default function Home() {
     }
 }
 );
-gsap.from(".ani-t1", {
-  y:25,
-  opacity:0,
+gsap.To(".ani-t1", {
+  y:-25,
+  opacity:1,
   duration: 0.8,
   ease:'back.out',
   stagger:0.35,
@@ -150,8 +150,8 @@ gsap.from(".ani-t1", {
   }
 }
 );
-gsap.from(".ani-t2", {
-  y:25,
+gsap.To(".ani-t2", {
+  y:-25,
   opacity:0,
   duration: 0.8,
   ease:'back.out',
@@ -164,9 +164,9 @@ gsap.from(".ani-t2", {
 }
 );
 
-  gsap.from(".ani-g", {
-    y:30,
-    opacity:0,
+  gsap.To(".ani-g", {
+    y:-30,
+    opacity:1,
     duration: 0.5,
     ease:'back.out',
     stagger:0.35,
