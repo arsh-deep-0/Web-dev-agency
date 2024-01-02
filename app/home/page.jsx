@@ -37,23 +37,23 @@ export default function Home() {
   const scrollToPricing = () => {
     if (pricingRef.current) {
       const targetY = pricingRef.current.getBoundingClientRect().top + window.pageYOffset;
-      slowScrollto(targetY);
+      slowScrollTo(targetY);
     }
   };
   const scrollToPortfolio = () => {
     if (portfolioRef.current) {
       const targetY = portfolioRef.current.getBoundingClientRect().top + window.pageYOffset;
-      slowScrollto(targetY);
+      slowScrollTo(targetY);
     }
   };
   const scrollToContact = () => {
     if (contactRef.current) {
       const targetY = contactRef.current.getBoundingClientRect().top + window.pageYOffset;
-      slowScrollto(targetY);
+      slowScrollTo(targetY);
     }
   };
 
-  const slowScrollto = (targetY, duration = 2000) => {
+  const slowScrollTo = (targetY, duration = 2000) => {
     const initialY = window.pageYOffset;
     const diff = targetY - initialY;
     let start;
@@ -66,7 +66,7 @@ export default function Home() {
       const percentage = Math.min(time / duration, 1);
       const easedPercentage = easeOutQuad(percentage);
 
-      window.scrollto(0, initialY + diff * easedPercentage);
+      window.scrollTo(0, initialY + diff * easedPercentage);
 
       if (time < duration) {
         requestAnimationFrame(scrollStep);
@@ -95,9 +95,9 @@ export default function Home() {
 
   useEffect(()=>{
     let ctx = gsap.context(()=>{
-      gsap.to(".ani", {
-        y:-30,
-        opacity:1,
+      gsap.from(".ani", {
+        y:30,
+        opacity:0,
         duration: 0.5,
         ease:'sine.out',
         stagger:0.35,
@@ -109,9 +109,9 @@ export default function Home() {
     }
     );
 
-    gsap.to(".ani-p", {
-      y:-30,
-      opacity:1,
+    gsap.from(".ani-p", {
+      y:30,
+      opacity:0,
       duration: 0.5,
       ease:'sine.out',
       stagger:0.35,
@@ -124,9 +124,9 @@ export default function Home() {
   );
 
   
-  gsap.to(".ani-t", {
-    y:-25,
-    opacity:1,
+  gsap.from(".ani-t", {
+    y:25,
+    opacity:0,
     duration: 0.8,
     ease:'back.out',
     stagger:0.35,
@@ -137,10 +137,22 @@ export default function Home() {
     }
 }
 );
-
-gsap.to(".ani-t2", {
- 
-  opacity:1,
+gsap.from(".ani-t1", {
+  y:25,
+  opacity:0,
+  duration: 0.8,
+  ease:'back.out',
+  stagger:0.35,
+  scrollTrigger: {
+      trigger: ".ani-t1",
+      start: "top 70%",
+      toggleActions: "play none none none ",
+  }
+}
+);
+gsap.from(".ani-t2", {
+  y:25,
+  opacity:0,
   duration: 0.8,
   ease:'back.out',
   stagger:0.35,
@@ -152,16 +164,16 @@ gsap.to(".ani-t2", {
 }
 );
 
-  gsap.to(".ani-g", {
-    y:-30,
-    opacity:1,
+  gsap.from(".ani-g", {
+    y:30,
+    opacity:0,
     duration: 0.5,
     ease:'back.out',
     stagger:0.35,
     scrollTrigger: {
         trigger: ".ani-g",
         start: "top 70%",
-        toggleActions: "play reverse play reverse ",
+        toggleActions: "play none none none ",
     }
 }
 );

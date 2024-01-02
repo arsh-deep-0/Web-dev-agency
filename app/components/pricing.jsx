@@ -1,11 +1,11 @@
 function Pricing({ pricingRef }) {
     return <>
         <div ref={pricingRef} id='pricing' className="flex-col  py-8 px-2 white-wire">
-            <h2 className="text-center text-4xl  blue-text aoboshi h-12 underline lg:my-12 ani-t2 opacity-0  mb-12 ">Pricing levels</h2>
+            <h2 className="text-center text-4xl  blue-text aoboshi h-12 underline lg:my-12 ani-t2   mb-12 ">Pricing levels</h2>
 
             <div class="parent h-auto">
             <div className="flex flex-col gap-2 md:grid md:grid-cols-3 md:gap-8 md:pb-16">
-            <div className="ani opacity-0 flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2  px-2 md:w-full md:pt-24 md:h-full md:justify-start md:mt-12 flex-grow">
+            <div className="ani  flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2  px-2 md:w-full md:pt-24 md:h-full md:justify-start md:mt-12 flex-grow">
                 <p className="rose text-center text-3xl">Standard</p>
                 <p className="text-center">Best for small businesses</p>
                 <p className="aoboshi text-3xl mt-4">$479</p>
@@ -30,7 +30,7 @@ function Pricing({ pricingRef }) {
                 </ul>
             </div>
 
-            <div className="ani opacity-0 flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 md:w-full md:pt-24 md:h-full md:justify-start flex-grow">
+            <div className="ani  flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 md:w-full md:pt-24 md:h-full md:justify-start flex-grow">
                 <p className="rose text-center text-3xl">Pro</p>
                 <p className="text-center">Best for small businesses</p>
                 <p className="aoboshi text-3xl mt-4">$749</p>
@@ -51,7 +51,7 @@ function Pricing({ pricingRef }) {
                 </ul>
             </div>
 
-            <div className="ani opacity-0 flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 md:w-full md:pt-24 md:h-full md:justify-start md:mt-12 flex-grow">
+            <div className="ani  flex flex-col bg-black items-center justify-center  rounded-md py-4 text-white my-2 px-2 md:w-full md:pt-24 md:h-full md:justify-start md:mt-12 flex-grow">
                 <p className="rose text-center text-3xl">Custom</p>
                 <p className="text-center">Best for small businesses</p>
                 <p className="aoboshi text-3xl mt-4">$999</p>
