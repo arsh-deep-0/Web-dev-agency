@@ -207,7 +207,8 @@ function NewNavbar({ scrollToPricing , scrollToPortfolio, scrollToContact}) {
 
 
                         <h1 className="text-black  font-semibold text-base life">
-                        lets make your Housing Business shine
+                         Brightening 
+ Housing  Enterprises
                         </h1>
 
 
