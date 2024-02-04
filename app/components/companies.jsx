@@ -57,7 +57,7 @@ function Companies() {
     return <div className="bg-black ">
         <div className="overflow-hidden bg-black scroller-container">
 
-            <div ref={appcom} id='scroller1' className="bg-black h-12 flex items-center  border-b bottom-1 border-white border-solid gap-8 lg:gap-32">
+            <div ref={appcom} id='scroller1' className="bg-black h-14 flex items-center border-t  border-b bottom-1 border-white border mb-1  gap-8 lg:gap-32">
 
                 <div className="flex items-center gap-8 lg:gap-32 ">
                     <img className="logo h-8 scroller1" src="company-1.svg" alt="" />

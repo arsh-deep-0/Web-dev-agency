@@ -13,8 +13,8 @@ function Linestopover(props) {
 
         let ctx = gsap.context(() => {
 
-            gsap.to(".timelinestopper", {
-                marginTop: '44rem',
+            gsap.to(".timelinestopover", {
+                marginTop: '72rem',
                 duration: 15,
                 scrollTrigger: {
                     trigger: ".heads",
@@ -26,7 +26,7 @@ function Linestopover(props) {
             );
 
             gsap.to(".colorline", {
-                height: '48rem',
+                height: '76rem',
                 duration: 15,
                 scrollTrigger: {
                     trigger: ".heads",
@@ -49,6 +49,7 @@ function Linestopover(props) {
 
             gsap.to('.tlfeature', {
                 opacity: 1,
+               
                 scrollTrigger: {
                     trigger: ".heads",
                     start: "top center-=30",
@@ -60,8 +61,8 @@ function Linestopover(props) {
             gsap.from('.funnel-piece', {
 
                 opacity: 0,
-                y: 60,
-                stagger: 0.2,
+                y: 35,
+                stagger: 0.38,
                 ease: 'sine.Out',
                 scrollTrigger: {
                     trigger: ".heads",
@@ -96,7 +97,7 @@ function Linestopover(props) {
         <div ref={apptl} className="flex pr-2">
             <Timelinestopover />
             <Line />
-            <div className="gradientblue ml-4 mb-8 rounded-md">
+            <div className="gradientblue w-95  ml-4 mb-8 rounded-md feature-h">
                 <Feature {...props} />
             </div>
 

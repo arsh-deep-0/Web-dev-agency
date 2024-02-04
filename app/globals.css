@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Anonymous+Pro:wght@400;700&family=Aoboshi+One&family=Cormorant+Garamond:wght@400;500&family=Crimson+Text&family=EB+Garamond:wght@800&family=Encode+Sans+Expanded&family=Gotu&family=Libre+Bodoni:wght@700&family=Red+Rose:wght@300;400;500;600;700&family=Reem+Kufi+Ink&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Slab:wght@200&family=Antic+Slab&family=Forum&family=Life+Savers:wght@400;700&family=Abhaya+Libre:wght@800&family=Anonymous+Pro:wght@400;700&family=Aoboshi+One&family=Cormorant+Garamond:wght@400;500&family=Crimson+Text&family=EB+Garamond:wght@800&family=Encode+Sans+Expanded&family=Gotu&family=Libre+Bodoni:wght@700&family=Red+Rose:wght@300;400;500;600;700&family=Reem+Kufi+Ink&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,6 +34,29 @@ body {
   font-family: 'Red Rose';
 }
 
+.forum{
+  font-family: 'Forum', serif;
+}
+
+.jose{
+  font-family: 'Josefin Slab', serif;
+}
+
+.abril{
+  font-family: 'Abril Fatface', serif;
+}
+
+.gotu{
+  font-family: 'Gotu', sans-serif;
+}
+.life{
+  font-family: 'Life Savers', serif;
+  /* letter-spacing: 0.1rem; */
+}
+
+.antics{
+  font-family: 'Antic Slab', serif;
+}
 .anonymous {
   font-family: 'Anonymous Pro', monospace
 }
@@ -42,6 +65,7 @@ body {
   font-family: 'Aoboshi One', serif;
 
 }
+
 
 .abhaya {
   font-family: 'Abhaya Libre', serif;
@@ -84,15 +108,21 @@ body {
 }
 
 .button {
-  border: 0px white solid;
-  padding: 6px;
-  width: 10rem;
+  border: 0.25px white solid;
+padding: 6px;
   border-radius: 0.3rem;
   color: white;
-  box-shadow: 4px 4px 2px rgba(180, 180, 180, 0.75);
+  box-shadow: 4px 4px 0.5px rgba(180, 180, 180, 0.45);
 
 }
+.target {
+  font-kerning: none;
+}
 
+.circle{
+
+  right: 0px; 
+}
 
 .colorline {
   background: linear-gradient(to bottom,
@@ -103,8 +133,13 @@ body {
       rgb(255, 0, 0) 105%
       /* Complete the gradient with blue at 100% */
     );
+
+    background: linear-gradient(to bottom , #9e00ff,#0094ff );
 }
 
+.timelinestopover{
+  margin-top: 4.5rem;
+}
 .glow {
   box-shadow:
     inset 0 0 5px #fff,
@@ -131,7 +166,14 @@ body {
   transform: translateY(1rem) translateX(-4rem);
 }
 
-.steps-outer {
+
+.steps{
+  margin-bottom: 0.5rem;
+  transform: translateY(1rem) translateX(-4rem);
+  
+}
+
+.steps-outers {
   margin-left: 35%;
   position: absolute;
 }
@@ -180,42 +222,76 @@ body {
 
   width: 90%;
   box-shadow: 0rem 0rem 0.5rem rgba(119, 0, 255, 0.318);
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
+  background-color: white;
 }
 
 .gallery-heading-container{
   box-shadow: 0rem 0rem 0.5rem rgba(119, 0, 255, 0.318);
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
+  background-color: white;
 }
 
 .wire{
   z-index: -1;
 }
 
+.h-960{
+  height: fit-content;
+}
+.parent {
+  height: fit-content;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-auto-rows: 1fr; /* Equal height rows */
+}
+
 
 li{
-  background-image: url('/red tick.svg');
+  background-image: url('/blue-tick.svg');
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 1.75rem;
+  background-size: 1.5rem;
   margin-bottom: 1.25rem;
   padding-bottom: 0.25rem;
   padding-left: 3rem;
   list-style-type: none;
 }
 
+ul.feature li {
+  background-image: url('/white-tick.svg');
+}
+
 .gradientblue{
-  background: linear-gradient(180deg,rgb(47, 4, 141) 0%, rgb(12, 2, 72) 25%, rgb(15, 2, 62) 75%,rgb(10, 2, 42) 100% );
-  background: gray;
-  background: linear-gradient(180deg, gray ,rgb(23, 23, 23), black);
-  background: linear-gradient(180deg, #0094ff, #002139);
-  background: linear-gradient(180deg, rgba(255, 0, 0, 0.477),rgba(0, 0, 0, 0.777),black);
-  width: 95%;
+  background: linear-gradient(32deg , #0095ff, #9e00ff99);
+  
   box-shadow: 0px 2px 4px rgb(255, 255, 255,0.34);
 }
 
-.black-wire{
+.w-95{
+  width: 95%;
+}
+
+@layer utilities{.black-wire{
   background: url('/black-wire.svg');
+  background-position: center;
+  background-repeat: repeat-y;
+
+}
+
+.black-wire-lg{
+  background: url('/black-wire-lg.svg');
+  background-position: center;
+  background-repeat: repeat-y;
+
+}
+}
+.white-wire{
+  background: url('/white-wire.svg');
+  background-position: center;
 }
 
 .shadow{
@@ -229,28 +305,136 @@ li{
   background-repeat: no-repeat;
 }
 
+.review-text{
+  color: gray;
+  /* margin-top: -3%;
+  margin-left: 20%; */
+  height: 5rem;
+  
+}
+
 .review-photo{
-  margin-top: 38%;
+  /* margin-top: 34%; */
   padding: 0.1rem;
-  margin-left: -80%;
+  /* margin-left: -80%; */
   overflow: hidden;
-  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.35);
+  transform: translateY(1rem);
+ 
 }
 
 .client-name{
-margin-top: 36%;
-margin-left: -32%;
-
+  /* width: 8rem; */
+/* margin-top: 30.5%;
+margin-left: -25%; */
+color: gray;
+text-align: start;
 }
 
 .client-role{
-
-  color: red;
+  color: gray;
 }
 
 
 .client-business{
-  margin-top: 38%;
-  margin-left: 40%;
+  /* width: 10rem; */
+  
+  /* margin-top: 38.5%;
+  margin-left: 31%; */
+  text-align: right;
+ 
 }
 
+.w-96p{
+width: 96%;
+}
+
+@layer utilities{
+  .w-m{
+    width: 22rem;
+    height: 13rem;
+  }
+  .w-t{
+    width: 36rem;
+    height: 24rem;
+  }
+  .w-lg{
+    width: 48rem;
+    height: 16rem;
+  }
+
+  
+}
+
+
+.bluee-text{
+  /* color: linear-gradient(143deg,);
+  background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
+  -webkit-background-clip: text;
+  background-clip:text ;
+  -webkit-text-fill-color: transparent;
+  color:transparent; */
+  color:#6600ff;
+}
+@layer utilities{
+
+.blue-text{
+  
+  background: -webkit-linear-gradient(32deg, #0094ff, #9e00ff);
+  -webkit-background-clip: text;
+  background-clip:text ;
+  -webkit-text-fill-color: transparent;
+  color:transparent; 
+  
+}
+}
+
+
+.bg-blue-voilet{
+  background:linear-gradient(32deg, #0094ff, #9e00ff); ;
+}
+
+.target{
+  font-kerning: none;
+}
+
+/* styles/SplashScreen.module.css */
+
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Set your preferred background color */
+
+  
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 300;
+}
+
+.splashHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.feature-h{
+  height: 72rem;
+}
+
+
+.feature-h-lg{
+  height: 32rem;
+}
+.feature-h-lgg{
+  height: 39.5rem;
+}
+
+.w-main{
+  width: 69%;
+}
+
+.w-desc{
+  width: 31%;
+}

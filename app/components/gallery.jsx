@@ -6,52 +6,72 @@ function Gallery() {
   
 
     useEffect(() => {
-        gsap.from(".kitchen", {
-            opacity:0,
-            x:25,
+        gsap.from(".gallery-container", {
+           
             
-            stagger: 0.4,
-            ease: 'linear',
+            // scale:0,
+            x:300,
+            
+            ease: 'sine.out',
             scrollTrigger: {
                 trigger: ".gallery-container",
-                start: "top center+=210",
-                end:"top center+=50",
-                toggleActions: "restart reverse restart reverse ",
-                scrub:true
+                start: "top center+=400",
+                end:"top center+=300",
+                scrub: 1,
+                 toggleActions: "restart none restart none ",
+              
+            }
+        })
+
+
+        gsap.from(".kitchen", {
+           
+            
+            scale:0,
+            
+            stagger: 0.075,
+            ease: 'sine.out',
+            scrollTrigger: {
+                trigger: ".gallery-container",
+                start: "top center+=290",
+                end:"top center+=80",
+                scrub: 2,
+                 toggleActions: "restart none restart none ",
+              
             }
         }
         );
     },[]);
 
-    return <div className="justify-center  flex w-full">
-        <div className="flex gallery-container items-center justify-center overflow-hidden">
-            <div>
-                <img className="kitchen" src="side handle.svg" alt="" />
+    return <div className="justify-center  flex w-full overflow-hidden ">
+        <div className="flex gallery-container items-center justify-center overflow-hidden ">
+            <div className="w-1/12 ">
+                <img className="kitchen  ml-2 lg:h-96" src="side handle.svg" alt="" />
             </div>
-            <div className="flex flex-col ">
-                <div className="flex ">
-                    <img className="kitchen" src="Heading-gallery.svg" alt="" />
+            <div className="flex flex-col w-11/12">
+                <div className="flex  ">
+                    <img className="kitchen h-12 lg:ml-4 lg:h-16" src="Heading-gallery.svg" alt="" />
                 </div>
                 <div className=" flex ">
-                    <div>
-                        <img className="kitchen" src="main-kitchen.svg" alt="" />
+                    <div className="w-main">
+                        <img className="kitchen w-full" src="main-kitchen.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="gallery-description.svg" alt="" />
+                    <div className=" w-desc ">
+                        <img className="kitchen w-full" src="gallery-description.svg" alt="" />
                     </div>
                 </div>
-                <div className="kitchen-container flex ">
-                    <div>
-                        <img className="kitchen" src="kitchen-1.svg" alt="" />
+                <div className="kitchen-container flex w-full">
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-1.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="kitchen-2.svg" alt="" />
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-2.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="kitchen-3.svg" alt="" />
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-3.svg" alt="" />
                     </div>
-                    <div>
-                        <img className="kitchen" src="kitchen-4.svg" alt="" />
+                    <div className="w-1/4">
+                        <img className="kitchen w-full" src="kitchen-4.svg" alt="" />
                     </div>
                 </div>
 
